@@ -16,15 +16,28 @@ const menu = [
 
 const Nabar = () => {
   return (
-    <nav className="fixed w-screen bg-primary text-white font-semibold py-4 px-24">
-      <div className="flex justify-center bg-navbar p-2 rounded-lg mb-2 ">
+    <nav className="fixed w-screen bg-primary text-white font-semibold py-4 px-8 lg:px-24">
+      {/* -- Navbar Upper Section -- */}
+      <div className="flex justify-center items-center gap-2 bg-navbar rounded-lg mb-2 p-2">
         <img src="/assets/icons/nav_ball_icon.svg" alt="navbar icon" />
-        <p className="!text-white">
+        <p className="!text-white flex justify-between text-xs">
           Join Our Personalized Nutrition Demo For Free
         </p>
+      {/* -- Arrow icon -- */}
+        <svg className="lg:ml-2" width={24} height={24} viewBox="0 0 24 24" fill="none">
+            <path
+                d="M4 12H20M20 12L14 6M20 12L14 18"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
       </div>
-      <div className="absolute left-0 p-[0.5px] bg-navbar w-screen"></div>
-      <section className="flex items-center justify-between py-6 ">
+      {/* -- Divider -- */}
+      <div className="absolute left-0 p-[0.5px] bg-navbar w-screen mt-1"></div>
+      <section className="flex items-center justify-between py-4">
+        {/* -- Logo -- */}
         <div>
           <img
             src="/assets/logo/logo.svg"
@@ -33,17 +46,32 @@ const Nabar = () => {
             height={130}
           />
         </div>
-        <div className="flex gap-5 justify-center items-center">
+        {/* -- Nav -- */}
+        <div className="hidden lg:flex gap-5 justify-center items-center">
           {menu.map((item, index) => (
             <ul key={index}>
               <li>{item.label}</li>
             </ul>
           ))}
+          {/* -- Contact CTA -- */}
           <ul>
             <li>
               <Button>Contact Us</Button>
             </li>
           </ul>
+        </div>
+        {/* -- Burger Menu -- */}
+        <div className="lg:hidden">
+          <svg width={24} height={24} viewBox="0 0 24 24" >
+              <path
+                  className="fill-accent"
+                  d="M3 12H21M3 6H21M9 18H21"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+              />
+          </svg>
         </div>
       </section>
     </nav>
