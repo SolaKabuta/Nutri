@@ -1,0 +1,38 @@
+[
+  {
+    "image": "/assets/images/tennis.jpg",
+    "label": "Weight loss",
+    "title": "The Benefits of Hydration for Weight Loss",
+    "text": ["Discover how staying hydrated can support your weight loss goals and improve overall", "health."],
+    "avatar": "/assets/images/avtr_1.jpg",
+    "avatarName": "Emily Johnson",
+    "dateRead": "23 May 2023 - 5 min read"
+  },
+  {
+    "image": "/assets/images/double.jpg",
+    "label": "Mindful Eating",
+    "title": "Cultivating a Healthy Relationship with Food",
+    "text": ["Learn how practicing mindful eating can help you develop a healthier relationship with", "food, improve digestion, and enhance overall well-being."],
+    "avatar": "/assets/images/avtr_2.jpg",
+    "avatarName": "Sarah Thomposon",
+    "dateRead": "23 May 2023 - 5 min read"
+  },
+  {
+    "image": "/assets/images/duo.jpg",
+    "label": "Understanding Macronutrients",
+    "title": "The Benefits of Hydration for Weight Loss",
+    "text": ["Get a comprehensive understanding of macronutrients and their role in your diet for", "optimal health and weight management."],
+    "avatar": "/assets/images/avtr_3.jpg",
+    "avatarName": "Mark Wilson",
+    "dateRead": "23 May 2023 - 5 min read"
+  },
+  {
+    "image": "/assets/images/fruits.jpg",
+    "label": "Healthy Snacks on the Go",
+    "title": "Quick and Nutritious Options",
+    "text": ["Explore a variety of convenient and healthy snack ideas to keep you fueled throughout", "the day."],
+    "avatar": "/assets/images/avtr_4.jpg",
+    "avatarName": "Emily Johnson",
+    "dateRead": "23 May 2023 - 5 min read"
+  }
+]

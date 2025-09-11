@@ -1,7 +1,7 @@
 import * as React from "react";
 import Hero from "../components/sections/Hero";
 import Features from "../components/sections/Features";
-// import Blogs from "../components/sections/Blogs";
+import Blogs from "../components/sections/Blogs";
 // import Testimonials from "../components/sections/Testimonials";
 // import Pricing from "../components/sections/Pricing";
 
@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Hero/>
       <Features/>
-      {/*<Blogs/>*/}
+      <Blogs/>
       {/*<Testimonials/>*/}
       {/*<Pricing/>*/}
     </>
