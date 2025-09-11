@@ -1,5 +1,5 @@
 // import { Button } from "../ui/button";
-// import FeaturesCard from "../ui/home/FeaturesCard";
+import BlogsCard from "../ui/home/BlogsCard";
 
 // interface HomeProps {
 //   propName: type;
@@ -15,7 +15,7 @@ const Blogs = () => {
           experts. Here's what you can expect from our blog.
         </p>
       </div>
-      {/*<FeaturesCard />*/}
+      <BlogsCard />
     </main>
   );
 };
