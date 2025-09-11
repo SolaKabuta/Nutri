@@ -7,11 +7,11 @@ import { Button } from "../ui/button";
 
 const menu = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/" },
-  { label: "Team", path: "/" },
-  { label: "Process", path: "/" },
-  { label: "Pricing", path: "/" },
-  { label: "Blog", path: "/" },
+  { label: "About", path: "/about" },
+  { label: "Team", path: "/team" },
+  { label: "Process", path: "/process" },
+  { label: "Pricing", path: "/pricing" },
+  { label: "Blog", path: "/blog" },
 ];
 
 const Nabar = () => {
@@ -19,8 +19,8 @@ const Nabar = () => {
     <nav className="fixed w-screen bg-primary text-white font-semibold py-4 px-8 lg:px-24">
       {/* -- Navbar Upper Section -- */}
       <div className="relative flex justify-center items-center gap-2 bg-navbar rounded-lg mb-2 p-2">
-        <img className="absolute left-8 hidden md:block md:scale-75" src="/assets/images/abstract_left.png" alt="upper navbar left decoration" />
-        <img className="absolute right-8 hidden md:block md:scale-75" src="/assets/images/abstract_right.png" alt="upper navbar left decoration" />
+        <img className="absolute left-8 hidden md:block md:scale-75 lg:scale-100" src="/assets/images/abstract_left.png" alt="upper navbar left decoration" />
+        <img className="absolute right-8 hidden md:block md:scale-75 lg:scale-100" src="/assets/images/abstract_right.png" alt="upper navbar left decoration" />
         <img src="/assets/icons/nav_ball_icon.svg" alt="navbar icon" />
         <p className="!text-white flex justify-between text-xs lg:text-base">
           Join Our Personalized Nutrition Demo For Free

@@ -86,8 +86,8 @@ p {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-title-background: #FAFDF2;
+  --color-background:  #FAFDF2;
+  --color-navbar:  #234338;
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
