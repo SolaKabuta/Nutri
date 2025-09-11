@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Button } from "../components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 
 // interface HomeProps {
 //   propName: type;
@@ -7,8 +8,8 @@ import { Button } from "../components/ui/button";
 
 const Home = () => {
   return (
-    <main className="w-screen h-screen place-content-center bg-accent-var">
-      <div className="flex gap-10 bg-title-background">
+    <main className="w-screen h-screen place-content-center">
+      <div className="flex gap-10 ">
         {/* -- Hero Banner Container -- */}
         <section>
           <img src="/assets/images/hero_banner.jpg" alt="hero banner" />
@@ -41,6 +42,24 @@ const Home = () => {
           <div className="flex gap-4 py-8">
             <Button>Get Starter Today</Button>
             <Button variant="secondary">Book a demo</Button>
+          </div>
+          {/* -- Avatars -- */}
+          <div className="flex items-center gap-3">
+            <section className="flex -space-x-3 p-2 border-1 border-accent rounded-full ">
+              <Avatar>
+                <AvatarImage src="/assets/images/avatar_1.jpg" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <Avatar>
+                <AvatarImage src="/assets/images/avatar_2.jpg" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <Avatar>
+                <AvatarImage src="/assets/images/avatar_3.jpg" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </section>
+            <p className="font-semibold"><span className="text-avatars">430+</span> Happy Customers</p>
           </div>
         </section>
       </div>

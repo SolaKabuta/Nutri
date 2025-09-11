@@ -101,6 +101,7 @@ p {
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: #CBEA7B;
   --color-accent-var: #F6FBE9;
+  --color-avatars: #468671;
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
   --color-border: #E5F5BD;
