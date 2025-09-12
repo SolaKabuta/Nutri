@@ -1,4 +1,4 @@
-import * as React from "react";
+// import * as React from "react";
 import Hero from "../components/sections/Hero";
 import Features from "../components/sections/Features";
 import Blogs from "../components/sections/Blogs";
