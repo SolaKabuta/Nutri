@@ -1,6 +1,7 @@
 // import { Button } from "../ui/button";
 // import TestimonialsCard from "../ui/home/TestimonialsCard";
 import testimonialsCard from "../../data/testimonialsCard.json";
+import Autoplay from 'embla-carousel-autoplay'
 
 import {
   Carousel,
@@ -27,7 +28,12 @@ const Testimonials = () => {
           their journey to better health and well-being.
         </p>
       </div>
-      <Carousel className="w-[400px] md:w-[740px] lg:w-full">
+      <Carousel plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+      className=" w-[400px] md:w-[740px] lg:w-full">
         <CarouselContent >
           {testimonialsCard.map((item: Item, index: number) => (
             <CarouselItem  className="basis-full lg:basis-1/3">
