@@ -28,17 +28,17 @@ const Testimonials = () => {
         </p>
       </div>
       <Carousel>
-        <CarouselContent>
+        <CarouselContent >
           {testimonialsCard.map((item: Item, index: number) => (
-            <CarouselItem key={index} className="basis-1/3">
-              <div className="relative bg-background border border-border-light w-full rounded-xl p-6">
+            <CarouselItem  className="md:basis-1/3">
+              <div key={index} className="relative bg-background border border-border-light w-fit rounded-xl p-10">
                 <img src={item.icon} alt="" />
                 <div className="pt-12 pb-24">
                   {item.text.map((t, i) => (
                     <p key={i}>{t}</p>
                   ))}
                 </div>
-                <div className="absolute bottom-0 left-0 bg-accent-var flex gap-3 items-center w-full py-4 px-6 mt-14">
+                <div className="absolute bottom-0 left-0 bg-accent-var flex gap-3 items-center w-full py-6 px-10 mt-14">
                   <img src={item.image} alt="features icon" />
                   <p className="font-semibold">{item.name}</p>
                 </div>

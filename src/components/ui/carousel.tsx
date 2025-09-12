@@ -183,17 +183,21 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 rounded-full",
-        orientation === "horizontal"
-          ? "top-1/2 -left-12 -translate-y-1/2"
-          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+        "absolute size-8 rounded-lg bg-accent-var p-6",
+        orientation === "vertical"
+          ? "bottom-1/2 -left-12 -translate-y-1/2"
+          : "-bottom-24 left-5/12 translate-x-6 rotate-360",
         className
       )}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft />
+      {/*<ArrowLeft />*/}
+      <svg width={24} height={24} viewBox="0 0 24 24" fill="none">
+          <path className="stroke-3 " d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -213,17 +217,20 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 rounded-full",
-        orientation === "horizontal"
+        "absolute size-8 ounded-lg bg-accent-var p-6",
+        orientation === "vertical"
           ? "top-1/2 -right-12 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+          : "-bottom-24 right-5/12 -translate-x-2 rotate-360",
         className
       )}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight />
+      {/*<ArrowRight />*/}
+      <svg width={24} height={24} viewBox="0 0 24 24" fill="none">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
       <span className="sr-only">Next slide</span>
     </Button>
   )
