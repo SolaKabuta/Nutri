@@ -1,0 +1,45 @@
+import { Button } from "../button";
+import pricingCard from "../../../data/pricingCard";
+
+interface PricingCardProps {
+  plan: string;
+  discount: string;
+  text: string;
+  price: number;
+  yearlyPrice: number;
+}
+
+const PricingCard = () => {
+  return (
+    <main>
+      <div className="grid place-content-center">
+        <div className="border-1 border-accent p-2 rounded-lg">
+          <Button>Montlhy</Button>
+          <Button>Yearly</Button>
+        </div>
+        <p className="text-sm text-center pt-4 pb-7">Save 50% on Yearly</p>
+      </div>
+      {/* Monthly Pricing Cards */}
+      <div className="grid place-items-center lg:grid-cols-3 gap-8">
+        {pricingCard.map((item: PricingCardProps, index: number) => (
+          <section key={index} className="bg-accent-var p-8">
+            <p className="font-semibold text-xl">{item.plan}</p>
+            <p>{item.discount}</p>
+            <p>{item.text}</p>
+            <div className="flex items-center py-7">
+              <p className="text-price font-semibold text-4xl">
+                {item.price}
+              </p>
+              <p>{item.month}</p>
+            </div>
+            <div className="w-full">
+              <Button>Choose Plan</Button>
+            </div>
+          </section>
+        ))}
+      </div>
+    </main>
+  );
+};
+
+export default PricingCard;

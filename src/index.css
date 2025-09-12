@@ -95,6 +95,7 @@ p {
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: #1A3129;
+  --color-price: #2C5446;
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: #333333;
   --color-secondary-foreground: var(--secondary-foreground);
