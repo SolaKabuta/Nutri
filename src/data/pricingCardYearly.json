@@ -3,21 +3,24 @@
     "plan": "Basic Plan",
     "discount": "Up to 50% off on Yearly Plan",
     "text": "Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.",
-    "price": "$49",
-    "monthly": "/month"
+    "price": "$588",
+    "discountPrice": "$294.00",
+    "yearly": "/yearly"
   },
   {
     "plan": "Premium Plan",
     "discount": "Up to 50% off on Yearly Plan",
     "text": "Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support, and personalized recipe recommendations.",
-    "price": "$79",
-    "monthly": "/month"
+    "price": "$948",
+    "discountPrice": "$474.00",
+    "yearly": "/yearly"
   },
   {
     "plan": "Ultimate Plan",
     "discount": "Up to 50% off on Yearly Plan",
     "text": "Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.",
-    "price": "$99",
-    "monthly": "/month"
+    "price": "$1188",
+    "discountPrice": "$594.00",
+    "yearly": "/yearly"
   }
 ]
