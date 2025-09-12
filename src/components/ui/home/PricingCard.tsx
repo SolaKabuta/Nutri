@@ -1,5 +1,6 @@
 import { Button } from "../button";
 import pricingCard from "../../../data/pricingCard";
+import {useState} from "react";
 
 interface PricingCardProps {
   plan: string;
@@ -10,12 +11,15 @@ interface PricingCardProps {
 }
 
 const PricingCard = () => {
+  
+  const [isMonthly, setIsMonthly] = useState(true);
+  
   return (
     <main>
       <div className="grid place-content-center">
         <div className="border-1 border-accent p-2 rounded-lg">
-          <Button>Montlhy</Button>
-          <Button>Yearly</Button>
+          <Button onClick={() => setIsMonthly(prev => !prev)} variant={isMonthly ? "monthly" : "yearly"}>Montlhy</Button>
+          <Button onClick={() => setIsMonthly(prev => !prev)} variant={isMonthly ? "yearly" : "monthly"}>Yearly</Button>
         </div>
         <p className="text-sm text-center pt-4 pb-7">Save 50% on Yearly</p>
       </div>
@@ -24,13 +28,13 @@ const PricingCard = () => {
         {pricingCard.map((item: PricingCardProps, index: number) => (
           <section key={index} className="bg-accent-var p-8">
             <p className="font-semibold text-xl">{item.plan}</p>
-            <p>{item.discount}</p>
-            <p>{item.text}</p>
+            <p className="pb-7">{item.discount}</p>
+            <p className="text-balance">{item.text}</p>
             <div className="flex items-center py-7">
               <p className="text-price font-semibold text-4xl">
                 {item.price}
               </p>
-              <p>{item.month}</p>
+              <p>{item.monthly}</p>
             </div>
             <div className="w-full">
               <Button>Choose Plan</Button>

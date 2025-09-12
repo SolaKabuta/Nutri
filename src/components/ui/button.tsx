@@ -17,6 +17,10 @@ const buttonVariants = cva(
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
         secondary:
           "bg-accent-var text-secondary-foreground font-semibold border-1 border-border shadow-xs duration-500 ease-in-out hover:bg-primary/90 hover:text-white",
+        monthly: 
+        "bg-primary text-white font-semibold",
+        yearly: 
+        "bg-none text-primary font-semibold ",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
