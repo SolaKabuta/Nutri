@@ -8,12 +8,12 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Hero = () => {
   return (
-    <main className="w-screen h-screen place-content-center">
+    <main className="w-screen h-screen ">
       {/* -- Hero Section Container Start -- */}
       <div className="flex flex-col justify-center lg:justify-start baseline items-center lg:flex-row gap-10 ">
         {/* -- Hero Banner Container -- */}
-        <section className="w-1/2">
-          <img src="/assets/images/hero_banner.jpg" alt="hero banner" />
+        <section className="md:w-full lg:w-1/2">
+          <img src="/assets/images/hero_banner.jpg" alt="hero banner" width={800} height={1200}/>
         </section>
         <section className="text-center lg:text-left px-4 lg:px-0 lg:pt-24">
           {/* -- Title -- */}
@@ -40,12 +40,12 @@ const Hero = () => {
             <p>power of personalized nutrition coaching.</p>
           </div>
           {/* -- CTAs -- */}
-          <div className="flex gap-4 py-8">
+          <div className="flex justify-center lg:justify-start gap-4 py-8">
             <Button>Get Starter Today</Button>
             <Button variant="secondary">Book a demo</Button>
           </div>
           {/* -- Avatars -- */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center justify-center lg:justify-start gap-3">
             <section className="flex -space-x-3 p-2 border-1 border-accent rounded-full ">
               <Avatar>
                 <AvatarImage src="/assets/images/avatar_1.jpg" />

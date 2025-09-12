@@ -16,5 +16,35 @@
     "image": "/assets/images/avatar_6.jpg",
     "text": ["I had struggled with my weight for years until I found ","Nutritionist. Their personalized approach and tailored","nutrition plan made all the difference. I've never fel","better!"],
     "icon": "/assets/icons/quote.svg"
+  },
+  {
+    "name": "Sophie Martin",
+    "image": "/assets/images/avatar_7.jpg",
+    "text": [
+      "As a busy mom, finding time for myself was tough.",
+      "Nutritionist's meal plans fit perfectly into my hectic schedule.",
+      "I've gained more energy and confidence than ever before!"
+    ],
+    "icon": "/assets/icons/quote.svg"
+  },
+  {
+    "name": "David Lee",
+    "image": "/assets/images/avatar_8.jpg",
+    "text": [
+      "I always struggled with emotional eating.",
+      "The lifestyle coaching and support from Nutritionist helped me build healthier habits.",
+      "Now, I feel in control of my health and my life."
+    ],
+    "icon": "/assets/icons/quote.svg"
+  },
+  {
+    "name": "Amina El Bakri",
+    "image": "/assets/images/avatar_9.jpg",
+    "text": [
+      "I wanted to learn more about nutrition, not just follow a diet.",
+      "The educational workshops and personalized advice were eye-opening.",
+      "I've made lasting changes thanks to Nutritionist's expert team."
+    ],
+    "icon": "/assets/icons/quote.svg"
   }
 ]

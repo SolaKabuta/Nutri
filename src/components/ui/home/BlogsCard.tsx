@@ -16,7 +16,7 @@ const BlogsCard = () => {
 
   return (
     <div className="">
-      <section className="grid grid-cols-2 gap-8 items-center">
+      <section className="grid lg:grid-cols-2 gap-8 items-center">
         {blogsCard.map((item: Item, index: number) => (
           <div
             key={index}

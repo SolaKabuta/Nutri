@@ -7,7 +7,7 @@ import BlogsCard from "../ui/home/BlogsCard";
 
 const Blogs = () => {
   return (
-    <main className="w-screen grid place-content-center py-14">
+    <main className="w-screen grid place-content-center lg:p-24">
       <div className="text-center">
         <h1 className="text-4xl py-8 font-bold">Our Blogs</h1>
         <p className="pb-14">

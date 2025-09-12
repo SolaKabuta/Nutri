@@ -16,7 +16,7 @@ const menu = [
 
 const Nabar = () => {
   return (
-    <nav className="fixed w-screen bg-primary text-white font-semibold py-4 px-8 lg:px-24">
+    <nav className="w-screen bg-primary text-white font-semibold py-4 px-8 lg:px-24">
       {/* -- Navbar Upper Section -- */}
       <div className="relative flex justify-center items-center gap-2 bg-navbar rounded-lg mb-2 p-2">
         <img className="absolute left-8 hidden md:block md:scale-75 lg:scale-100" src="/assets/images/abstract_left.png" alt="upper navbar left decoration" />
