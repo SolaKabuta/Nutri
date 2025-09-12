@@ -7,11 +7,11 @@ import FeaturesCard from "../ui/home/FeaturesCard";
 
 const Features = () => {
   return (
-    <main className="w-screen grid place-content-center py-14">
+    <main className="w-screen grid place-content-center py-14 md:py-24 lg:py-14">
       <div className="text-center">
         <h1 className="text-4xl py-8 font-bold">Features</h1>
-        <p className="pb-14">
-          Welcome to the Feature Section of Nutritionist, your ultimate
+        <p className="text-sm md:text-base pb-14">
+          Welcome to the Feature Section of Nutritionist, <br className="lg:hidden" /> your ultimate
           destination for all things nutrition and wellness.
         </p>
       </div>

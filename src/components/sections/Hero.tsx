@@ -20,11 +20,11 @@ const Hero = () => {
           <p className="text-primary underline decoration-accent decoration-2 underline-offset-8 font-semibold">
             Transform Your ❤️ Health with
           </p>
-          <h1 className="text-5xl text-primary font-bold py-6">
-            Personalized Nutrition <br /> Coaching
+          <h1 className="text-4xl md:text-5xl text-primary font-bold py-6">
+            Personalized <br className="block md:hidden" /> Nutrition <br className="hidden md:block"/> Coaching
           </h1>
             {/* -- Paragraph -- */}
-          <div className="text-xs">
+          <div className="text-sm md:text-base text-balance">
             <p>
               Welcome to Nutritionist, your partner in achieving optimal health
               through personalized nutrition
