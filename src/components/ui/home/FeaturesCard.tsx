@@ -11,12 +11,20 @@ const FeaturesCard = () => {
     <div className="">
       <section className="grid lg:grid-cols-2 gap-8 items-center">
       {featuresCard.map((feature: Feature, index:number) => (
-        <div key={index} className="bg-accent-var border-1 border-border-light rounded-xl p-6">
+        <div key={index} className="bg-accent-var border-1 border-border-light rounded-xl p-6  transition duration-300 linear hover:bg-primary group">
           <div className="flex gap-3 items-center py-4">
             <img src={feature.icon} alt="features icon" />
-            <p className="font-semibold">{feature.label}</p>
+            <p className="font-semibold">
+              <span className="transition duration-500 ease-in-out group-hover:text-white">
+              {feature.label}
+              </span>
+            </p>
           </div>
-          {feature.text.map((t, i) => <p key={i}>{t}</p>)}
+          {feature.text.map((t, i) => <p key={i}>
+            <span className="transition duration-500 ease-in-out group-hover:text-white">
+              {t}
+            </span>
+          </p>)}
         </div>
       ))}
       </section>

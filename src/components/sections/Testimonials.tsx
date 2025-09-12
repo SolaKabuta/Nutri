@@ -30,7 +30,7 @@ const Testimonials = () => {
       </div>
       <Carousel plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 3000,
               }),
             ]}
       className=" w-[400px] md:w-[740px] lg:w-full">

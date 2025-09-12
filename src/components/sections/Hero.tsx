@@ -40,8 +40,8 @@ const Hero = () => {
             <p>power of personalized nutrition coaching.</p>
           </div>
           {/* -- CTAs -- */}
-          <div className="flex justify-center lg:justify-start gap-4 py-8">
-            <Button>Get Starter Today</Button>
+          <div className="flex justify-center items-center lg:justify-start gap-4 py-8">
+            <a href="#pricing" className="text-sm  px-4 py-3 has-[>svg]:px-3 rounded-sm bg-accent text-primary font-semibold shadow-xs transition duration-500 ease-in-out hover:bg-primary/90 hover:text-white">Get Starter Today</a>
             <Button variant="secondary">Book a demo</Button>
           </div>
           {/* -- Avatars -- */}
