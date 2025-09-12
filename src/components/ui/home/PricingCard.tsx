@@ -36,9 +36,7 @@ const PricingCard = () => {
               </p>
               <p>{item.monthly}</p>
             </div>
-            <div className="w-full">
-              <Button>Choose Plan</Button>
-            </div>
+              <Button className="w-full">Choose Plan</Button>
           </section>
         ))}
       </div>
