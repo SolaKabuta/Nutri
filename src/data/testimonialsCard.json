@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Jennifer Anderson",
+    "image": "/assets/images/avatar_4.jpg",
+    "text": ["I can't thank Nutritionist enough for their personalized","nutrition coaching. It has completely transformed my","approach to food and helped me shed those extra","pounds. Highly recommended!"],
+    "icon": "/assets/icons/quote.svg"
+  },
+  {
+    "name": "Robert Johnson",
+    "image": "/assets/images/avatar_5.jpg",
+    "text": ["Nutritionist has been a game-changer for me. The ","expert guidance and support I received from their","team made my weight loss journey so much easier.","Thank you!"],
+    "icon": "/assets/icons/quote.svg"
+  },
+  {
+    "name": "Emily Davis",
+    "image": "/assets/images/avatar_6.jpg",
+    "text": ["I had struggled with my weight for years until I found ","Nutritionist. Their personalized approach and tailored","nutrition plan made all the difference. I've never fel","better!"],
+    "icon": "/assets/icons/quote.svg"
+  }
+]
