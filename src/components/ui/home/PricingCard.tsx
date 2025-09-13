@@ -35,7 +35,7 @@ const PricingCard = () => {
       {isMonthly && (
       <div className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
         {pricingCard.map((item: PricingCardProps, index: number) => (
-          <section key={index} className="bg-accent-var border-1 rounded-lg p-8 transition duration-300 ease-in-out hover:bg-primary group">
+          <section key={index} className="bg-accent-var border-1 rounded-lg p-8  transition duration-300 ease-in-out hover:bg-primary group">
             <p className="font-semibold text-xl">
               <span className="transition duration-300 ease-in-out group-hover:text-white">
                 {item.plan}
@@ -47,7 +47,7 @@ const PricingCard = () => {
               </span>
             </p>
             <p className="text-balance ">
-              <span className="transition duration-300 ease-in-out group-hover:text-white">
+              <span className="transition duration-500 ease-in-out group-hover:text-white">
                 {item.text}
               </span>
             </p>
@@ -79,12 +79,12 @@ const PricingCard = () => {
                 </span>
               </p>
               <p className="pb-7 ">
-                <span className="transition duration-500 ease-in-out group-hover:text-accent">
+                <span className="text-red-500 transition duration-500 ease-in-out group-hover:text-accent">
                   {item.discountApplied}
                 </span>
               </p>
               <p className="text-balance ">
-                <span className="transition duration-300 ease-in-out group-hover:text-white">
+                <span className="transition duration-500 ease-in-out group-hover:text-white">
                   {item.text}
                 </span>
               </p>

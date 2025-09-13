@@ -51,14 +51,14 @@ const Nabar = () => {
         {/* -- Nav -- */}
         <div className="hidden lg:flex gap-5 justify-center items-center">
           {menu.map((item, index) => (
-            <ul key={index}>
+            <ul className="transition duration-300 ease-in-out hover:text-accent hover:scale-110 hover:cursor-pointer" key={index}>
               <li>{item.label}</li>
             </ul>
           ))}
           {/* -- Contact CTA -- */}
           <ul>
             <li>
-              <Button>Contact Us</Button>
+              <Button className="transition duration-500 hover:bg-white hover:text-primary hover:scale-110 hover:cursor-pointer">Contact Us</Button>
             </li>
           </ul>
         </div>
