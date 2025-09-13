@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
+
 
 // interface Nabar {
 //   propName: type;
@@ -40,7 +42,7 @@ const Nabar = () => {
       <div className="absolute left-0 p-[0.5px] bg-navbar w-screen mt-1"></div>
       <section className="flex items-center justify-between py-4">
         {/* -- Logo -- */}
-        <a href="/">
+        <Link to="/">
           <img
           className="transition duration-500 ease-in-out hover:scale-110"
             src="/assets/logo/logo.svg"
@@ -48,12 +50,12 @@ const Nabar = () => {
             width={130}
             height={130}
           />
-        </a>
+        </Link>
         {/* -- Nav -- */}
         <div className="hidden lg:flex gap-5 justify-center items-center">
           {menu.map((item, index) => (
             <ul className="transition duration-300 ease-in-out hover:text-accent hover:scale-110 hover:cursor-pointer" key={index}>
-              <li>{item.label}</li>
+              <Link to={item.path}>{item.label}</Link>
             </ul>
           ))}
           {/* -- Contact CTA -- */}
