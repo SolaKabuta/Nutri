@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
       </section>
       {/* -- FOOTER LOWER SECTION -- */}
-      <section className="relative flex gap-3 items-center lg:grid-cols-5  bg-navbar rounded-lg border border-price mb-2 p-2">
+      <section className="relative grid gap-3 items-center place-content-center lg:place-content-start lg:grid-cols-5  bg-navbar rounded-lg border border-price mb-2 p-2">
         {/* -- MAIL -- */}
         <a
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md"
@@ -153,11 +153,9 @@ const Footer = () => {
           Somewhere in the World
         </a>
         {/* -- Copyrights -- */}
-        <div>
-          <a className="text-sm font-light col-start-5" href="">
+          <a className="text-sm font-light lg:col-start-5" href="">
             © 2023 Nutritionist. All rights reserved.
           </a>
-        </div>
       </section>
     </nav>
   );
