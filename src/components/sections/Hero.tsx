@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Hero = () => {
   return (
-    <main className="w-screen h-screen ">
+    <main className="w-screen h-screen scroll-smooth">
       {/* -- Hero Section Container Start -- */}
       <div className="flex flex-col justify-center lg:justify-start baseline items-center lg:flex-row gap-10 ">
         {/* -- Hero Banner Container -- */}

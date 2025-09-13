@@ -10,7 +10,7 @@ const HeartIcon: React.FC<HeartIconProps> = ({ propName }) => {
   const [isLiked, setIsLiked] = useState(false);
   
   return (
-    <div>
+    <div >
       <button onClick={() => setIsLiked(prev => !prev)}>
         {/* -- Heart Icon -- */}
         <svg className={isLiked ? "fill-red-500 " : "fill-none"} width={24} height={24} viewBox="0 0 24 24" fill="none">
