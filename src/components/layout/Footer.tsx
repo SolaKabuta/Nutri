@@ -71,10 +71,10 @@ const Footer = () => {
         </div>
       </section>
       {/* -- FOOTER LOWER SECTION -- */}
-      <section className="relative grid gap-3 items-center place-content-center lg:place-content-start lg:grid-cols-5  bg-navbar rounded-lg border border-price mb-2 p-2">
+      <section className=" grid gap-3 items-center place-items-center   lg:grid-cols-5  bg-navbar rounded-lg border border-price mb-2 p-2">
         {/* -- MAIL -- */}
         <a
-          className="flex items-center gap-2 border-1 border-price p-2 rounded-md"
+          className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
           href="mailto:hello@squareup.com"
         >
           {/* -- Mail Icon -- */}
@@ -98,8 +98,8 @@ const Footer = () => {
         </a>
         {/* -- PHONE -- */}
         <a
-          className="flex items-center gap-2 border-1 border-price p-2 rounded-md"
-          href=""
+          className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
+          href="tel:+1234567890"
         >
           {/* -- Phone Icon -- */}
           <svg
@@ -122,8 +122,9 @@ const Footer = () => {
         </a>
         {/* -- PIN -- */}
         <a
-          className="flex items-center gap-2 border-1 border-price p-2 rounded-md"
-          href=""
+          className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
+          href="https://www.google.com/maps/place/Bruxelles/@50.8552021,4.2930163,19786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c3a4ed73c76867:0xc18b3a66787302a7!8m2!3d50.8477029!4d4.3572001!16zL20vMDJybmJ2?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+          target='_blank'
         >
           {/* -- Pin Icon -- */}
           <svg
@@ -153,7 +154,7 @@ const Footer = () => {
           Somewhere in the World
         </a>
         {/* -- Copyrights -- */}
-          <a className="text-sm font-light lg:col-start-5" href="">
+          <a className="text-sm font-light lg:col-start-5 w-full" href="/">
             © 2023 Nutritionist. All rights reserved.
           </a>
       </section>
