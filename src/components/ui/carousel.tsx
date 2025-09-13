@@ -183,10 +183,10 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 rounded-lg bg-accent-var p-6",
+        "absolute size-8 ",
         orientation === "vertical"
           ? "bottom-1/2 -left-12 -translate-y-1/2"
-          : "-bottom-24 left-5/12 translate-x-6 rotate-360 hidden lg:block",
+          : "-bottom-24 left-5/12 translate-x-6 rotate-360 hidden lg:block lg:items-center h-12 px-4 pr-8",
         className
       )}
       disabled={!canScrollPrev}
@@ -217,10 +217,10 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "absolute size-8 ounded-lg bg-accent-var p-6",
+        "absolute size-8 ounded-lg ",
         orientation === "vertical"
           ? "top-1/2 -right-12 -translate-y-1/2"
-          : "-bottom-24 right-5/12 -translate-x-2 rotate-360 hidden lg:block",
+          : "-bottom-24 right-5/12 -translate-x-2 rotate-360 hidden lg:block lg:items-center h-12 px-4 pr-8",
         className
       )}
       disabled={!canScrollNext}
