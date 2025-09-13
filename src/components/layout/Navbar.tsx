@@ -40,14 +40,15 @@ const Nabar = () => {
       <div className="absolute left-0 p-[0.5px] bg-navbar w-screen mt-1"></div>
       <section className="flex items-center justify-between py-4">
         {/* -- Logo -- */}
-        <div>
+        <a href="/">
           <img
+          className="transition duration-500 ease-in-out hover:scale-110"
             src="/assets/logo/logo.svg"
             alt="Nutritrionist logo"
             width={130}
             height={130}
           />
-        </div>
+        </a>
         {/* -- Nav -- */}
         <div className="hidden lg:flex gap-5 justify-center items-center">
           {menu.map((item, index) => (

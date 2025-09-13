@@ -79,7 +79,7 @@ const PricingCard = () => {
                 </span>
               </p>
               <p className="pb-7 ">
-                <span className="text-red-500 transition duration-500 ease-in-out group-hover:text-accent">
+                <span className="text-orange-500 transition duration-500 ease-in-out group-hover:text-accent">
                   {item.discountApplied}
                 </span>
               </p>
