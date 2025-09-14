@@ -20,7 +20,7 @@ const buttonVariants = cva(
         price:
           "bg-accent text-primary font-semibold transition duration-700 ease-in-out hover:bg-white",
         monthly: 
-        "bg-primary text-white font-semibold hover:cursor-pointer",
+        "bg-primary text-white font-semibold transition duration-700 hover:cursor-pointer",
         yearly: 
         "bg-none text-primary font-semibold hover:cursor-pointer",
         ghost:

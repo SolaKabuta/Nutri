@@ -2,6 +2,7 @@ import { Button } from "../button";
 import pricingCard  from "../../../data/pricingCard.json";
 import pricingCardYearly from "../../../data/pricingCardYearly.json";
 import {useState} from "react";
+import { motion } from "motion/react"
 
 interface PricingCardProps {
   plan: string;
@@ -40,7 +41,11 @@ const PricingCard = () => {
       </div>
       {/* Monthly Pricing Cards */}
       {isMonthly && (
-      <div className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
+      <motion.div 
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7 }}
+        className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
         {pricingCard.map((item: PricingCardProps, index: number) => (
           <section key={index} className="bg-accent-var border-1 rounded-lg p-8  transition duration-300 ease-in-out hover:bg-primary group">
             <p className="font-semibold text-xl">
@@ -73,11 +78,15 @@ const PricingCard = () => {
               <Button variant="price" className="w-full hover:cursor-pointer">Choose Plan</Button>
           </section>
         ))}
-      </div>
+      </motion.div>
       )}
       {/* Yearly Pricing Cards */}
       {!isMonthly && (
-        <div className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
           {pricingCardYearly.map((item: PricingCardYearlyProps, index: number) => (
             <section key={index} className="bg-accent-var border-1 rounded-lg p-8 transition duration-300 ease-in-out hover:bg-primary group">
               <p className="font-semibold text-xl">
@@ -85,22 +94,30 @@ const PricingCard = () => {
                   {item.plan}
                 </span>
               </p>
-              <p className="pb-7 ">
+              <motion.p 
+                initial={{ opacity: 0, scale: 1.2 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="pb-7 ">
                 <span className="text-orange-500 transition duration-500 ease-in-out group-hover:text-accent">
                   {item.discountApplied}
                 </span>
-              </p>
+              </motion.p>
               <p className="text-balance ">
                 <span className="transition duration-500 ease-in-out group-hover:text-white">
                   {item.text}
                 </span>
               </p>
               <div className="flex items-center py-7">
-                <p className="font-bold text-4xl">
+                <motion.p 
+                  initial={{ opacity: 0, scale: 1.2 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="font-bold text-4xl">
                   <span className="text-price transition duration-500 ease-in-out  group-hover:text-accent">
                     {item.discountPrice}
                   </span>
-                </p>
+                </motion.p>
                 <p>
                   <span className=" transition duration-500 ease-in-out  group-hover:text-white">
                     {item.yearly}
@@ -110,7 +127,7 @@ const PricingCard = () => {
                 <Button variant="price" className="w-full hover:cursor-pointer">Choose Plan</Button>
             </section>
           ))}
-        </div>
+        </motion.div>
       )}
     </main>
   );
