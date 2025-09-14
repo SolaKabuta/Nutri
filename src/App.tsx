@@ -1,6 +1,7 @@
 // import { useState } from 'react'
-import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "motion/react";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/home";
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <AnimatePresence mode="wait">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -23,6 +25,7 @@ function App() {
         {/*<Route path="/blog" element={<Blog />} />*/}
       </Routes>
       <Footer />
+      </AnimatePresence>
     </>
   );
 }

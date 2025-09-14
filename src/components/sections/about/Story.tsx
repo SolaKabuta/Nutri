@@ -4,7 +4,7 @@
 const Story = () => {
   return (
     <>
-      <main className="w-screen h-screen grid place-content-center px-24">
+      <main className="w-screen grid place-content-center py-14 md:py-24 lg:py-14">
         {/* -- Title and texts -- */}
         <div className="text-center">
           <h1 className="text-5xl font-semibold">Our story</h1>
