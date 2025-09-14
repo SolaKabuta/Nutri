@@ -1,10 +1,10 @@
-import HeroAbout from "@/components/sections/HeroAbout";
+import Hero from "@/components/sections/about/Hero";
 
 const About = () => {
   return (
     <>
       <main>
-        <HeroAbout/>
+        <Hero/>
       </main>
     </>
   );
