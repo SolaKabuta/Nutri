@@ -1,4 +1,3 @@
-import storyCard from "../../../data/storyCard.json";
 import StoryCard from "../../ui/about/StoryCard";
 
 

@@ -6,7 +6,7 @@ interface BookMarkedIconProps {
   propName: string;
 }
 
-const BookMarkedIcon: React.FC<BookMarkedIconProps> = ({ propName }) => {
+const BookMarkedIcon: React.FC<BookMarkedIconProps> = () => {
   
   const [isBookmarked, setIsBookmarked] = useState(false);
   

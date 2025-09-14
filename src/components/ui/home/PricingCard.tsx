@@ -1,6 +1,6 @@
 import { Button } from "../button";
-import pricingCard  from "../../../data/pricingCard";
-import pricingCardYearly from "../../../data/pricingCardYearly";
+import pricingCard  from "../../../data/pricingCard.json";
+import pricingCardYearly from "../../../data/pricingCardYearly.json";
 import {useState} from "react";
 
 interface PricingCardProps {
@@ -9,6 +9,13 @@ interface PricingCardProps {
   text: string;
   price: string;
   monthly: string;
+}
+
+interface PricingCardYearlyProps {
+  plan: string;
+  discount: string;
+  text: string;
+  price: string;
   discountPrice: string;
   discountApplied: string;
   yearly: string;
@@ -71,7 +78,7 @@ const PricingCard = () => {
       {/* Yearly Pricing Cards */}
       {!isMonthly && (
         <div className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
-          {pricingCardYearly.map((item: PricingCardProps, index: number) => (
+          {pricingCardYearly.map((item: PricingCardYearlyProps, index: number) => (
             <section key={index} className="bg-accent-var border-1 rounded-lg p-8 transition duration-300 ease-in-out hover:bg-primary group">
               <p className="font-semibold text-xl">
                 <span className="transition duration-300 ease-in-out group-hover:text-white">

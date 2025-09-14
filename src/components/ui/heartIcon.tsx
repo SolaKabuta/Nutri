@@ -5,7 +5,7 @@ interface HeartIconProps {
   propName: string;
 }
 
-const HeartIcon: React.FC<HeartIconProps> = ({ propName }) => {
+const HeartIcon: React.FC<HeartIconProps> = () => {
   
   const [isLiked, setIsLiked] = useState(false);
   
