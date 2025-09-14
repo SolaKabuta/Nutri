@@ -1,4 +1,4 @@
-import StoryCard from "../../ui/about/StoryCard";
+// import StoryCard from "../../ui/about/StoryCard";
 
 
 const Story = () => {
@@ -16,7 +16,7 @@ const Story = () => {
         </div>
         {/* -- Story Cards -- */}
         <section>
-          <StoryCard />
+          {/*<StoryCard />*/}
         </section>
       </main>
     </>
