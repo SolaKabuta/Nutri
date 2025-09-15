@@ -1,4 +1,5 @@
-
+import { useState } from "react";
+import { Link } from "react-router-dom";
 // interface Nabar {
 //   propName: type;
 // }
@@ -14,6 +15,9 @@ const menu = [
 ];
 
 const Footer = () => {
+  
+  const [isHome, setIsHome] = useState(true);
+  
   return (
     <nav className="w-screen bg-primary text-white font-semibold py-4 px-8 lg:px-24">
       <section className="flex items-center justify-between py-4 pb-8">
@@ -34,7 +38,7 @@ const Footer = () => {
               className="transition duration-300 ease-in-out hover:text-accent hover:scale-110 hover:cursor-pointer"
               key={index}
             >
-              <li>{item.label}</li>
+              <li><Link to={item.path}>{item.label}</Link></li>
             </ul>
           ))}
         </div>
@@ -46,7 +50,7 @@ const Footer = () => {
           >
             Go To Top
           </a>
-          <a href="#">
+          <Link to="#">
             <div className="grid place-items-center bg-navbar size-12 rounded-full transition duration-500 hover:bg-accent group">
               {/* -- Arrow Up Icon -- */}
               <svg
@@ -66,15 +70,15 @@ const Footer = () => {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
       {/* -- FOOTER LOWER SECTION -- */}
       <section className=" grid gap-3 items-center place-items-center   lg:grid-cols-5  bg-navbar rounded-lg border border-price mb-2 p-2">
         {/* -- MAIL -- */}
-        <a
+        <Link
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
-          href="mailto:hello@squareup.com"
+          to="mailto:hello@squareup.com"
         >
           {/* -- Mail Icon -- */}
           <svg
@@ -94,11 +98,11 @@ const Footer = () => {
             />
           </svg>
           hello@squareup.com
-        </a>
+        </Link>
         {/* -- PHONE -- */}
-        <a
+        <Link
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
-          href="tel:+1234567890"
+          to="tel:+1234567890"
         >
           {/* -- Phone Icon -- */}
           <svg
@@ -118,11 +122,11 @@ const Footer = () => {
             />
           </svg>
           +91 91813 23 2309
-        </a>
+        </Link>
         {/* -- PIN -- */}
-        <a
+        <Link
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
-          href="https://www.google.com/maps/place/Bruxelles/@50.8552021,4.2930163,19786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c3a4ed73c76867:0xc18b3a66787302a7!8m2!3d50.8477029!4d4.3572001!16zL20vMDJybmJ2?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+          to="https://www.google.com/maps/place/Bruxelles/@50.8552021,4.2930163,19786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c3a4ed73c76867:0xc18b3a66787302a7!8m2!3d50.8477029!4d4.3572001!16zL20vMDJybmJ2?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
           target='_blank'
         >
           {/* -- Pin Icon -- */}
@@ -151,11 +155,11 @@ const Footer = () => {
             />
           </svg>
           Somewhere in the World
-        </a>
+        </Link>
         {/* -- Copyrights -- */}
-          <a className="text-sm font-light lg:col-start-5 w-full" href="/">
+          <Link className="text-sm font-light lg:col-start-5 w-full" to="/">
             © 2023 Nutritionist. All rights reserved.
-          </a>
+          </Link>
       </section>
     </nav>
   );
