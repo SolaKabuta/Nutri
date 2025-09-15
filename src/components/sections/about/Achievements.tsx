@@ -23,9 +23,9 @@ const Achievements = () => {
       {/* -- Achievements CTA -- */}
       <section className="relative grid place-content-center py-14 px-8 lg:px-24">
         {/* -- Abstract before img -- */}
-        <img className="absolute top-14 left-24" src="/assets/images/about/abstract_1.png" alt="" />
+        <img className="absolute top-14 left-8 lg:left-24" src="/assets/images/about/abstract_1.png" alt="" />
         {/* -- Abstract after img -- */}
-        <img className="absolute right-24 bottom-14" src="/assets/images/about/abstract_2.png" alt="" />
+        <img className="absolute bottom-14 right-8 lg:right-24 " src="/assets/images/about/abstract_2.png" alt="" />
         {/* -- CTA Layout -- */}
         <div className="flex flex-col lg:flex-row items-center gap-44 bg-accent-var p-4 md:p-14 rounded-lg ">
           <div>
@@ -39,7 +39,7 @@ const Achievements = () => {
               health and well-being.
             </p>
           </div>
-          <Button className="w-full lg:w-fit">Book a Demo</Button>
+          <Button className="z-50 w-full lg:w-fit">Book a Demo</Button>
         </div>
       </section>
     </main>
