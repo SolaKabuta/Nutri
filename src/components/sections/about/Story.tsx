@@ -4,9 +4,9 @@ import StoryCard from "../../ui/about/StoryCard";
 const Story = () => {
   return (
     <>
-      <main className="w-screen grid place-content-center py-14 md:py-24 lg:py-24 lg:pt-80">
+      <main className="w-screen grid place-content-center py-14 md:py-24 px-4 md:px-0 pt-[400px] lg:pt-[300px]">
         {/* -- Title and texts -- */}
-        <div className="text-center">
+        <div className="text-center md:px-24">
           <h1 className="text-5xl font-semibold py-14">Our story</h1>
           <p>
             Welcome to Nutritionist, your partner in achieving optimal health
