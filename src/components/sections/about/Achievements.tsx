@@ -1,6 +1,6 @@
-import { Button } from "../../ui/button";
+import { Button } from "@/components/ui/button";
 
-import AchievementsCard from "../../ui/about/AchievementsCard";
+import AchievementsCard from "@/components/ui/about/AchievementsCard";
 
 const Achievements = () => {
   return (

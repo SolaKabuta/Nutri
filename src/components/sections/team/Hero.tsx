@@ -4,10 +4,11 @@
 const Hero = () => {
   return (
     <main className="w-screen h-screen scroll-smooth pt-10 md:pt-20 px-4 lg:px-24">
-      <div className="bg-accent-var rounded-lg p-14">
+      <div className="relative bg-accent-var rounded-lg p-14">
         <div className="flex justify-center pb-10">
-          <img src="/assets/images/team/hero_icon.png" alt="hero icon/image" />
+          <img className="z-5" src="/assets/images/team/hero_icon.png" alt="hero icon/image" />
         </div>
+          <img className="absolute top-0 right-1/2 translate-x-1/2" src="/assets/images/team/abstract_1.png" alt="hero icon/image" />
         <h1 className="text-3xl md:text-5xl  font-semibold text-center">
           Our Team of Experts
         </h1>
