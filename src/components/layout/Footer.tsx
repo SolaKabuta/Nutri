@@ -50,7 +50,7 @@ const Footer = () => {
           >
             Go To Top
           </a>
-          <Link to="#">
+          <a href="#">
             <div className="grid place-items-center bg-navbar size-12 rounded-full transition duration-500 hover:bg-accent group">
               {/* -- Arrow Up Icon -- */}
               <svg
@@ -70,7 +70,7 @@ const Footer = () => {
                 />
               </svg>
             </div>
-          </Link>
+          </a>
         </div>
       </section>
       {/* -- FOOTER LOWER SECTION -- */}

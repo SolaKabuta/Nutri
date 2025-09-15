@@ -1,7 +1,7 @@
 import PageTransition from "@/components/animations/PageTransition";
 import Hero from "@/components/sections/about/Hero";
 import Story from "@/components/sections/about/Story";
-// import Achievements from "@/components/sections/about/Achievements";
+import Achievements from "@/components/sections/about/Achievements";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
       <main>
         <Hero/>
         <Story/>
-        {/*<Achievements/>*/}
+        <Achievements/>
       </main>
       </PageTransition>
     </>

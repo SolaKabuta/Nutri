@@ -2,7 +2,7 @@ const Achievements = () => {
   return (
     <>
       <main>
-        
+       <p>VLALVALVALEZVLAZEVA</p> 
       </main>
     </>
   );
