@@ -2,7 +2,7 @@
 const Hero = () => {
   return (
     <>
-      <main className="w-screen h-screen scroll-smooth pt-10 md:pt-20 px-4 md:px-24">
+      <main className="w-screen h-screen scroll-smooth pt-10 md:pt-20 px-4 lg:px-24">
         <img src="/assets/images/about/hero.png" alt="hero banner image" />
         <div className="bg-accent-var border-1 my-14 py-14 rounded-lg">
           <h1 className="text-3xl md:text-5xl  font-semibold text-center">Welcome to Nutritionist</h1>
