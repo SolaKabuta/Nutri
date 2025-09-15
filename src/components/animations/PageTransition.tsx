@@ -1,6 +1,8 @@
 // src/components/ui/PageTransition.tsx
 
 import { motion } from "motion/react";
+import type { ReactNode } from "react";  // ⬅️ type-only import obligatoire
+
 // import { ReactNode } from "react";
 
 interface PageTransitionProps {
