@@ -11,7 +11,7 @@ interface StoryCardProps {
 const StoryCard = () => {
   return (
     <>
-      <main className="grid place-content-center py-24 md:py-44 md:px-12 lg:px-24">
+      <main className="grid place-content-center py-24 md:py-44 px-8 md:px-12 lg:px-24">
         <section>
           {/* -- Story Cards Left Column -- */}
           {storyCard.map((item: StoryCardProps, index: number) => (
