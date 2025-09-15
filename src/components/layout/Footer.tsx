@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 // interface Nabar {
 //   propName: type;
@@ -16,7 +16,7 @@ const menu = [
 
 const Footer = () => {
   
-  const [isHome, setIsHome] = useState(true);
+  // const [isHome, setIsHome] = useState(true);
   
   return (
     <nav className="w-screen bg-primary text-white font-semibold py-4 px-8 lg:px-24">
