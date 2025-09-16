@@ -1,4 +1,5 @@
 import PageTransition from "@/components/animations/PageTransition";
+import OurTeam from '@/components/sections/team/OurTeam';
 
 import Hero from '@/components/sections/team/Hero';
 const Team = () => {
@@ -7,7 +8,7 @@ const Team = () => {
       <PageTransition>
       <main>
       <Hero/>
-      <Hero/>
+      <OurTeam/>
       </main>
       </PageTransition>
     </>
