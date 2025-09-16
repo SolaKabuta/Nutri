@@ -2,6 +2,7 @@
 // import * as React from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { AnimatePresence, motion } from "motion/react";
 
 // interface HomeProps {
 //   propName: type;
@@ -12,9 +13,11 @@ const Hero = () => {
       {/* -- Hero Section Container Start -- */}
       <div className="flex flex-col justify-center lg:justify-start baseline items-center lg:flex-row gap-10 ">
         {/* -- Hero Banner Container -- */}
-        <section className="md:w-full lg:w-1/2">
+        <motion.section 
+          initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 0.2}}
+          className="md:w-full lg:w-1/2">
           <img src="/assets/images/hero_banner.jpg" alt="hero banner" width={800} height={1200}/>
-        </section>
+        </motion.section>
         <section className="text-center lg:text-left px-4 lg:px-0 lg:pt-24">
           {/* -- Title -- */}
           <p className="text-primary underline decoration-accent decoration-2 underline-offset-8 font-semibold">
