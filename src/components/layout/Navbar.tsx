@@ -77,6 +77,10 @@ const Nabar = () => {
               />
           </svg>
         </div>
+        {/* -- Sidebar -- */}
+        <section>
+          
+        </section>
       </section>
     </nav>
   );

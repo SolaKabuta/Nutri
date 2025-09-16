@@ -1,6 +1,6 @@
-import {useState} from 'react';
+// import {useState} from 'react';
 import { Button } from '@/components/ui/button';
-import { AnimatePresence, motion } from 'motion/react';
+import { motion } from 'motion/react';
 // interface HeroProps {
 // }
 
@@ -14,14 +14,14 @@ const teamCategories = [
 
 const Hero = () => {
   
-  const [isManagement, setIsManagement] = useState(true);
-  const [isNutritionist, setIsNutritionist] = useState(false);
-  const [isSupport, setIsSupport] = useState(false);
-  const [isMarketing, setIsMarketing] = useState(false);
-  const [isTech, setIsTech] = useState(false);
+  // const [isManagement, setIsManagement] = useState(true);
+  // const [isNutritionist, setIsNutritionist] = useState(false);
+  // const [isSupport, setIsSupport] = useState(false);
+  // const [isMarketing, setIsMarketing] = useState(false);
+  // const [isTech, setIsTech] = useState(false);
   
   return (
-    <main className="w-screen h-screen scroll-smooth pt-10 md:pt-20 px-4 lg:px-24">
+    <main className="w-screen h-screen scroll-smooth pt-10 md:pt-20 lg:px-24">
       <div className="relative bg-accent-var rounded-lg p-14">
           {/* -- Hero Icon/Image -- */}
         <motion.div 
@@ -36,7 +36,7 @@ const Hero = () => {
           Our Team of Experts
         </motion.h1>
         <motion.p 
-          initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.2}}
+          initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1}}
           className="text-center py-14 px-4 ">
           Our team at Nutritionist is composed of highly skilled professionals
           who are passionate about helping you achieve your health and wellness
@@ -50,7 +50,7 @@ const Hero = () => {
       </div>
       {/* -- Team Select CTA -- */}
       <motion.section 
-        initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.6}}
+        initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.4}}
         className='bg-primary flex gap-3 justify-center items-center rounded-b-lg h-24'>
         {teamCategories.map((category) => (
         <ul>

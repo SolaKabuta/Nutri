@@ -1,6 +1,7 @@
 import blogsCard from "../../../data/blogsCard.json";
 import BookMarkedIcon from "../bookMarkedIcon";
 import HeartIcon from "../heartIcon";
+// import { AnimatePresence, motion } from "motion/react";
 
 interface Item {
   image: string;
