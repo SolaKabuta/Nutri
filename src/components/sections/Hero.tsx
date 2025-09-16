@@ -2,7 +2,7 @@
 // import * as React from "react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 
 // interface HomeProps {
 //   propName: type;
