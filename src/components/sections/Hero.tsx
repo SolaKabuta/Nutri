@@ -20,14 +20,20 @@ const Hero = () => {
         </motion.section>
         <section className="text-center lg:text-left px-4 lg:px-0 lg:pt-24">
           {/* -- Title -- */}
-          <p className="text-primary underline decoration-accent decoration-2 underline-offset-8 font-semibold">
+          <motion.p 
+            initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 0.6}}
+            className="text-primary underline decoration-accent decoration-2 underline-offset-8 font-semibold">
             Transform Your ❤️ Health with
-          </p>
-          <h1 className="text-4xl md:text-5xl text-primary font-bold py-6">
+          </motion.p>
+          <motion.h1 
+            initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1}}
+            className="text-4xl md:text-5xl text-primary font-bold py-6">
             Personalized <br className="block md:hidden" /> Nutrition <br className="hidden md:block"/> Coaching
-          </h1>
+          </motion.h1>
             {/* -- Paragraph -- */}
-          <div className="text-sm md:text-base text-balance">
+          <motion.div 
+            initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.4}}
+            className="text-sm md:text-base text-balance">
             <p>
               Welcome to Nutritionist, your partner in achieving optimal health
               through personalized nutrition
@@ -41,14 +47,18 @@ const Hero = () => {
               today and experience the{" "}
             </p>
             <p>power of personalized nutrition coaching.</p>
-          </div>
+          </motion.div>
           {/* -- CTAs -- */}
-          <div className="flex justify-center items-center lg:justify-start gap-4 py-8">
+          <motion.div 
+            initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.4}}
+            className="flex justify-center items-center lg:justify-start gap-4 py-8">
             <a href="#pricing" className="text-sm  px-4 py-3 has-[>svg]:px-3 rounded-sm bg-accent text-primary font-semibold shadow-xs transition duration-500 ease-in-out hover:bg-primary/90 hover:text-white">Get Starter Today</a>
             <Button variant="secondary">Book a demo</Button>
-          </div>
+          </motion.div>
           {/* -- Avatars -- */}
-          <div className="flex items-center justify-center lg:justify-start gap-3">
+          <motion.div 
+            initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.8}}
+            className="flex items-center justify-center lg:justify-start gap-3">
             <section className="flex -space-x-3 p-2 border-1 border-accent rounded-full ">
               <Avatar>
                 <AvatarImage src="/assets/images/avatar_1.jpg" />
@@ -64,7 +74,7 @@ const Hero = () => {
               </Avatar>
             </section>
             <p className="font-semibold"><span className="text-avatars">430+</span> Happy Customers</p>
-          </div>
+          </motion.div>
         </section>
       </div>
       {/* -- Hero Section Container Start -- */}
