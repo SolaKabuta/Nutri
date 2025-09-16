@@ -32,16 +32,16 @@ const Hero = () => {
         <p className="text-center py-14 px-4 ">
           Our team at Nutritionist is composed of highly skilled professionals
           who are passionate about helping you achieve your health and wellness
-          goals. With a diverse range of <br />
+          goals. With a diverse range of 
           expertise in nutrition, coaching, and support, our team is dedicated
           to providing you with the guidance and personalized care you need. Get
-          to know the experts behind <br />
+          to know the experts behind 
           our success and discover how they can make a positive impact on your
           journey to better health.
         </p>
       </div>
       {/* -- Team Select CTA -- */}
-      <section className='bg-primary flex gap-3 justify-center items-center rounded-lg h-24'>
+      <section className='bg-primary flex gap-3 justify-center items-center rounded-b-lg h-24'>
         {teamCategories.map((category) => (
         <ul>
           <li><Button variant='yearly' className=' text-white transition duration-500 hover:bg-navbar'>{category.label}</Button></li>
