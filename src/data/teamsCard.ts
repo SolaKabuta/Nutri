@@ -1,4 +1,10 @@
-[
+// export interface Feature {
+//   image: string;
+//   label: string;
+//   role: string;
+// }
+
+export const managementTeam = [
   {
     "image": "/assets/images/team/team_1.jpg",
     "label": "Sarah Mitchell",

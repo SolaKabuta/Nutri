@@ -1,27 +1,20 @@
-// import {useState} from 'react';
-import { Button } from '@/components/ui/button';
+
 import { motion } from 'motion/react';
+
+
+
+
 // interface HeroProps {
 // }
 
-const teamCategories = [
-  { id: 'management', label: 'Management Team' },
-  { id: 'nutritionist', label: 'Nutritionists and Dietitians' },
-  { id: 'support', label: 'Customer Support' },
-  { id: 'marketing', label: 'Marketing and Communications' },
-  { id: 'tech', label: 'Technology and Development' },
-];
+
 
 const Hero = () => {
   
-  // const [isManagement, setIsManagement] = useState(true);
-  // const [isNutritionist, setIsNutritionist] = useState(false);
-  // const [isSupport, setIsSupport] = useState(false);
-  // const [isMarketing, setIsMarketing] = useState(false);
-  // const [isTech, setIsTech] = useState(false);
+ 
   
   return (
-    <main className="w-screen h-screen scroll-smooth pt-10 md:pt-20 lg:px-24">
+    <main className="w-screen scroll-smooth pt-10 md:pt-20 lg:px-24">
       <div className="relative bg-accent-var rounded-lg p-14">
           {/* -- Hero Icon/Image -- */}
         <motion.div 
@@ -48,16 +41,8 @@ const Hero = () => {
           journey to better health.
         </motion.p>
       </div>
-      {/* -- Team Select CTA -- */}
-      <motion.section 
-        initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1.4}}
-        className='bg-primary flex gap-3 justify-center items-center rounded-b-lg h-24'>
-        {teamCategories.map((category) => (
-        <ul>
-          <li><Button variant='yearly' className=' text-white transition duration-500 hover:bg-navbar'>{category.label}</Button></li>
-        </ul>
-        ))}
-      </motion.section>
+      
+      
     </main>
   );
 };

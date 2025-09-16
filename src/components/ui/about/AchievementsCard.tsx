@@ -21,8 +21,10 @@ const AchievementsCard = () => {
                 </span>
               </p>
             </div>
-              <p className="transition duration-500 ease-in-out group-hover:text-white">
+              <p >
+                <span className="transition duration-500 ease-in-out group-hover:text-white">
               {item.text}
+                </span>
               </p>
           </div>
         ))}

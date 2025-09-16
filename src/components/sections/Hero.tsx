@@ -1,5 +1,8 @@
+// src/components/sections/Hero.tsx
+
 // Home Page Hero Section Component
 // import * as React from "react";
+
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { motion } from "motion/react";
@@ -7,6 +10,7 @@ import { motion } from "motion/react";
 // interface HomeProps {
 //   propName: type;
 // }
+
 const Hero = () => {
   return (
     <main className="w-screen h-screen scroll-smooth">

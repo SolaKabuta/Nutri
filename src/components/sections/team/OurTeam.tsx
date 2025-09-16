@@ -1,4 +1,4 @@
-import TeamCard from "@/components/ui/team/TeamCard";
+import TeamCard from "@/components/ui/team/TeamsCard";
 // interface OurTeamProps {
 //   image: string;
 //   label: string;
