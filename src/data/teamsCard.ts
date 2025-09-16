@@ -49,3 +49,72 @@ export const nutritionTeam = [
     "role": "Chief Marketing Officer"
   }
 ]
+
+export const supportTeam = [
+  {
+    "image": "/assets/images/team/team_1.jpg",
+    "label": "Sarah Mitchell",
+    "role": "Founder and CEO"
+  },
+  {
+    "image": "/assets/images/team/team_2.jpg",
+    "label": "Emily Thompson",
+    "role": "Chief Operating Officer"
+  },
+  {
+    "image": "/assets/images/team/team_3.jpg",
+    "label": "John Davis",
+    "role": "Chief Financial Officer"
+  },
+  {
+    "image": "/assets/images/team/team_4.jpg",
+    "label": "Rachel Adams",
+    "role": "Chief Marketing Officer"
+  }
+]
+
+export const marketingTeam = [
+  {
+    "image": "/assets/images/team/team_1.jpg",
+    "label": "Sarah Mitchell",
+    "role": "Founder and CEO"
+  },
+  {
+    "image": "/assets/images/team/team_2.jpg",
+    "label": "Emily Thompson",
+    "role": "Chief Operating Officer"
+  },
+  {
+    "image": "/assets/images/team/team_3.jpg",
+    "label": "John Davis",
+    "role": "Chief Financial Officer"
+  },
+  {
+    "image": "/assets/images/team/team_4.jpg",
+    "label": "Rachel Adams",
+    "role": "Chief Marketing Officer"
+  }
+]
+
+export const techTeam = [
+  {
+    "image": "/assets/images/team/team_1.jpg",
+    "label": "Sarah Mitchell",
+    "role": "Founder and CEO"
+  },
+  {
+    "image": "/assets/images/team/team_2.jpg",
+    "label": "Emily Thompson",
+    "role": "Chief Operating Officer"
+  },
+  {
+    "image": "/assets/images/team/team_3.jpg",
+    "label": "John Davis",
+    "role": "Chief Financial Officer"
+  },
+  {
+    "image": "/assets/images/team/team_4.jpg",
+    "label": "Rachel Adams",
+    "role": "Chief Marketing Officer"
+  }
+]
