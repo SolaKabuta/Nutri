@@ -1,4 +1,4 @@
-import workflowCard from "../../../data/workflowCard.json";
+import workflowCard from "@/data/workflowCard.json";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 
@@ -14,7 +14,7 @@ const WorkflowCard = () => {
     <div className="py-24">
       <section className="relative z-50 grid lg:grid-cols-2 gap-8 items-center">
       {workflowCard.map((feature: Feature, index:number) => (
-        <div key={index} className="relative bg-accent-var border-1 border-border-light rounded-xl p-6 md:p-4 mb-14 transition duration-300 linear hover:bg-primary group">
+        <div key={index} className="relative bg-accent-var border-1 border-border-light rounded-xl p-6 md:p-4 mb-24 transition duration-300 linear hover:bg-primary group">
             <p className="absolute -z-40 -top-22 left-0 text-9xl font-bold"><span className="text-avatars">{feature.number}</span></p>
           <div className="flex gap-3 items-center py-4">
             <img src={feature.icon} alt="features icon" width={66} height={66}/>
