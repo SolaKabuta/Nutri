@@ -10,21 +10,21 @@
   },
   {
   "number": "O2",
-  "label": "Personalized Nutritrion Plans",
+  "label": "Assessing Your Needs",
   "icon": "/assets/icons/process/basket.svg",
   "text": [
-    "Our team of experienced and certified nutritionists will provide professional guidance", 
-    "and support throughout your journey. They will answer your questions, address your ", 
-    "concerns, and keep you motivated as you work towards your goals."]
+    "Our team of experienced nutritionists and dietitians will conduct a thorough ", 
+    "assessment of your nutritional needs and create a personalized plan tailored to your ", 
+    "unique requirements."]
   },
   {
   "number": "O3",
-  "label": "Food Tracking and Analysis",
+  "label": "Personalized Nutrition Plan",
   "icon": "/assets/icons/process/clipboard.svg",
   "text": [
-    "Effortlessly track your food intake using our user-friendly app. Our nutritionists will ", 
-    "analyze your data to provide insights into your eating habits, help you identify areas", 
-    "for improvement, and make personalized recommendations."]
+    "Based on the information gathered, we will develop a personalized nutrition plan ", 
+    "that takes into account your dietary preferences, lifestyle, and health goals. This plan ", 
+    "will provide you with clear guidelines on what to eat, portion sizes, and meal timing."]
   },
   {
   "number": "O4",
@@ -37,56 +37,58 @@
   },
   {
   "number": "O5",
-  "label": "Lifestyle and Behavior Coaching",
+  "label": "Ongoing Support",
   "icon": "/assets/icons/process/headset.svg",
   "text": [
-    "Achieving sustainable results requires more than just a diet plan. Our nutritionists will ", 
-    "work with you to develop healthy habits, address emotional eating, and provide ", 
-    "strategies to overcome obstacles along the way."]
+    "Throughout your journey, our team of nutrition experts will be there to provide ", 
+    "ongoing support, answer your questions, and offer guidance. We believe in the power ", 
+    "of continuous encouragement to help you stay motivated and achieve long-term ",
+    "success."]
   },
   {
   "number": "O6",
-  "label": "Nutritional Education and Workshops",
+  "label": "Progress Tracking",
   "icon": "/assets/icons/process/shield.svg",
   "text": [
-    "Expand your knowledge of nutrition through informative articles and educational ", 
-    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
-    "informed choices for long-term success."]
+    "We encourage you to track your progress using our user-friendly mobile app or ", 
+    "website tools. You can log your meals, monitor your weight, and track your physical ", 
+    "activity, allowing you to have a clear picture of your progress and make any ",
+    "necessary adjustments to your plan."]
   },
   {
   "number": "O7",
-  "label": "Nutritional Education and Workshops",
+  "label": "Regular Check-ins",
   "icon": "/assets/icons/process/pin.svg",
   "text": [
-    "Expand your knowledge of nutrition through informative articles and educational ", 
-    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
-    "informed choices for long-term success."]
+    "We will schedule regular check-ins to review your progress, address any concerns, ", 
+    "and make any necessary adjustments to your nutrition plan. Our goal is to ensure ", 
+    "that you are consistently moving towards your desired outcomes."]
   },
   {
   "number": "O8",
-  "label": "Nutritional Education and Workshops",
+  "label": "Education and Resources",
   "icon": "/assets/icons/process/hat.svg",
   "text": [
-    "Expand your knowledge of nutrition through informative articles and educational ", 
-    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
-    "informed choices for long-term success."]
+    "Along the way, we will provide you with educational resources, such as articles, ", 
+    "guides, and videos, to enhance your understanding of nutrition and empower you to ", 
+    "make informed choices for a healthier lifestyle."]
   },
   {
   "number": "O9",
-  "label": "Nutritional Education and Workshops",
+  "label": "Fine-Tuning and Adjustments",
   "icon": "/assets/icons/process/battery.svg",
   "text": [
-    "Expand your knowledge of nutrition through informative articles and educational ", 
-    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
-    "informed choices for long-term success."]
+    "As your journey progresses and your goals evolve, we will fine-tune and make ", 
+    "adjustments to your nutrition plan to ensure that it continues to align with your ", 
+    "changing needs."]
   },
   {
   "number": "10",
-  "label": "Nutritional Education and Workshops",
+  "label": "Sustainable Lifestyle Habits",
   "icon": "/assets/icons/process/cup.svg",
   "text": [
-    "Expand your knowledge of nutrition through informative articles and educational ", 
-    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
-    "informed choices for long-term success."]
+    "Our ultimate goal is to help you develop sustainable lifestyle habits that will support ", 
+    "your long-term health and wellness. We will equip you with the knowledge and skills ", 
+    "to maintain your progress even after you've completed the program."]
   }
 ]
