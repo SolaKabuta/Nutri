@@ -1,23 +1,24 @@
 import { Button } from "../button";
-import pricingCard  from "@/data/pricingCard.json";
-import pricingCardYearly from "@/data/pricingCardYearly.json";
+// import pricingCard  from "@/data/pricingCard.json";
+// import pricingCardYearly from "@/data/pricingCardYearly.json";
+import {pricingCardMonthly, pricingCardYearly} from "@/data/pricingCardDetails";
 import {useState} from "react";
 import { motion } from "motion/react"
 
-interface PricingCardProps {
+interface PricingCardMonthlyProps {
   plan: string;
+  features: string[];
   discount: string;
-  text: string;
   price: string;
   monthly: string;
+  premium: string;
 }
 
 interface PricingCardYearlyProps {
   plan: string;
   discount: string;
-  text: string;
   price: string;
-  discountPrice: string;
+  features: string[];
   discountApplied: string;
   yearly: string;
 }
@@ -46,7 +47,7 @@ const PlansCard = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
         className="grid place-items-center lg:grid-cols-3 gap-8 hover:cursor-pointer">
-        {pricingCard.map((item: PricingCardProps, index: number) => (
+        {pricingCardMonthly.map((item: PricingCardMonthlyProps, index: number) => (
           <section key={index} className="bg-accent-var border-1 rounded-lg p-8  transition duration-300 ease-in-out hover:bg-primary group">
             <p className="font-semibold text-xl">
               <span className="transition duration-300 ease-in-out group-hover:text-white">
@@ -60,9 +61,17 @@ const PlansCard = () => {
             </p>
             <p className="text-balance ">
               <span className="transition duration-500 ease-in-out group-hover:text-white">
-                {item.text}
+                {item.features}
               </span>
             </p>
+            {/* -- Ultimate Plan -- */}
+            <div>
+              <p className="text-balance mt-10">
+                <span className="transition duration-500 ease-in-out group-hover:text-white">
+                  {item.premium}
+                </span>
+              </p>
+            </div>
             <div className="flex items-center py-7">
               <p className="font-bold text-4xl">
                 <span className="text-price transition duration-500 ease-in-out  group-hover:text-accent">
@@ -105,11 +114,11 @@ const PlansCard = () => {
               </motion.p>
               <p className="text-balance ">
                 <span className="transition duration-500 ease-in-out group-hover:text-white">
-                  {item.text}
+                  {item.features}
                 </span>
               </p>
               <div className="flex items-center py-7">
-                <motion.p 
+                {/*<motion.p 
                   initial={{ opacity: 0, scale: 1.2 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
@@ -117,7 +126,7 @@ const PlansCard = () => {
                   <span className="text-price transition duration-500 ease-in-out  group-hover:text-accent">
                     {item.discountPrice}
                   </span>
-                </motion.p>
+                </motion.p>*/}
                 <p>
                   <span className=" transition duration-500 ease-in-out  group-hover:text-white">
                     {item.yearly}
