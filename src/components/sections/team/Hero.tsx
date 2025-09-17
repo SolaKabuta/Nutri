@@ -41,8 +41,6 @@ const Hero = () => {
           journey to better health.
         </motion.p>
       </div>
-      
-      
     </main>
   );
 };

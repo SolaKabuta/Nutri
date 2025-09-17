@@ -64,6 +64,7 @@ const TeamsCard = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1.2, ease: "easeInOut", delay: 2 }}
       >
+        {/*TODO: FINE TUNE ANIMATION*/}
       {/* -- Management Team -- */}
       <AnimatePresence>
         {isManagement && (
