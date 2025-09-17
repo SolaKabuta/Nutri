@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { managementTeam } from "@/data/teamsCard";
+import { managementTeam, nutritionTeam, supportTeam, marketingTeam, techTeam } from "@/data/teamsCard";
 import { motion, AnimatePresence } from "motion/react";
 import { Button } from "@/components/ui/button";
 
@@ -19,16 +19,16 @@ const teamCategories = [
 
 const TeamsCard = () => {
   const [isManagement, setIsManagement] = useState(true);
-  // const [isNutritionist, setIsNutritionist] = useState(false);
-  // const [isSupport, setIsSupport] = useState(false);
-  // const [isMarketing, setIsMarketing] = useState(false);
-  // const [isTech, setIsTech] = useState(false);
+  const [isNutritionist, setIsNutritionist] = useState(false);
+  const [isSupport, setIsSupport] = useState(false);
+  const [isMarketing, setIsMarketing] = useState(false);
+  const [isTech, setIsTech] = useState(false);
   function handleCategoryClick(categoryId: string) {
     setIsManagement(categoryId === "management");
-    // setIsNutritionist(categoryId === "nutritionist");
-    // setIsSupport(categoryId === "support");
-    // setIsMarketing(categoryId === "marketing");
-    // setIsTech(categoryId === "tech");
+    setIsNutritionist(categoryId === "nutritionist");
+    setIsSupport(categoryId === "support");
+    setIsMarketing(categoryId === "marketing");
+    setIsTech(categoryId === "tech");
   }
 
   return (
@@ -68,7 +68,7 @@ const TeamsCard = () => {
             {managementTeam.map((item: TeamsCardProps, index: number) => (
               <div
                 key={index}
-                className="relative transition duration-300 linear hover:bg-primary group"
+                className="relative group"
               >
                 <img
                   className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
@@ -89,9 +89,137 @@ const TeamsCard = () => {
         )}
       </AnimatePresence>
       {/* -- Nutrition Team -- */}
+      <AnimatePresence>
+        {isNutritionist && (
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 0 }}
+            transition={{ duration: 0.5, ease: "linear" }}
+            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+          >
+            {nutritionTeam.map((item: TeamsCardProps, index: number) => (
+              <div
+                key={index}
+                className="relative group"
+              >
+                <img
+                  className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
+                  src={item.image}
+                  alt="team member portrait"
+                />
+                <div className="absolute z-30 -bottom-4 bg-accent-var rounded-lg w-64 py-8 px-10 transition duration-700 group-hover:translate-y-2 group-hover:translate-x-8">
+                  <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
+                    {item.label}
+                  </p>
+                  <p className="text-sm transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
+                    {item.role}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.section>
+        )}
+      </AnimatePresence>
       {/* -- Support Team -- */}
+      <AnimatePresence>
+        {isSupport && (
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 0 }}
+            transition={{ duration: 0.5, ease: "linear" }}
+            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+          >
+            {supportTeam.map((item: TeamsCardProps, index: number) => (
+              <div
+                key={index}
+                className="relative group"
+              >
+                <img
+                  className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
+                  src={item.image}
+                  alt="team member portrait"
+                />
+                <div className="absolute z-30 -bottom-4 bg-accent-var rounded-lg w-64 py-8 px-10 transition duration-700 group-hover:translate-y-2 group-hover:translate-x-8">
+                  <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
+                    {item.label}
+                  </p>
+                  <p className="text-sm transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
+                    {item.role}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.section>
+        )}
+      </AnimatePresence>
       {/* -- Marketing Team -- */}
+      <AnimatePresence>
+        {isMarketing && (
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 0 }}
+            transition={{ duration: 0.5, ease: "linear" }}
+            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+          >
+            {marketingTeam.map((item: TeamsCardProps, index: number) => (
+              <div
+                key={index}
+                className="relative group"
+              >
+                <img
+                  className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
+                  src={item.image}
+                  alt="team member portrait"
+                />
+                <div className="absolute z-30 -bottom-4 bg-accent-var rounded-lg w-64 py-8 px-10 transition duration-700 group-hover:translate-y-2 group-hover:translate-x-8">
+                  <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
+                    {item.label}
+                  </p>
+                  <p className="text-sm transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
+                    {item.role}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </motion.section>
+        )}
+      </AnimatePresence>
       {/* -- Tech Team -- */}
+      <AnimatePresence>
+              {isTech && (
+                <motion.section
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 0 }}
+                  transition={{ duration: 0.5, ease: "linear" }}
+                  className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+                >
+                  {techTeam.map((item: TeamsCardProps, index: number) => (
+                    <div
+                      key={index}
+                      className="relative group"
+                    >
+                      <img
+                        className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
+                        src={item.image}
+                        alt="team member portrait"
+                      />
+                      <div className="absolute z-30 -bottom-4 bg-accent-var rounded-lg w-64 py-8 px-10 transition duration-700 group-hover:translate-y-2 group-hover:translate-x-8">
+                        <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
+                          {item.label}
+                        </p>
+                        <p className="text-sm transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
+                          {item.role}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </motion.section>
+              )}
+            </AnimatePresence>
       {/* -- Achievements CTA -- */}
       <motion.section
         initial={{ opacity: 0 }}

@@ -99,22 +99,22 @@ export const marketingTeam = [
 export const techTeam = [
   {
     "image": "/assets/images/team/tech_1.png",
-    "label": "Sarah Mitchell",
-    "role": "Founder and CEO"
+    "label": "Maxine Marshall",
+    "role": "Web Designer"
   },
   {
     "image": "/assets/images/team/tech_2.png",
-    "label": "Emily Thompson",
-    "role": "Chief Operating Officer"
+    "label": "Shawn Spencer",
+    "role": "Front-end Developer"
   },
   {
     "image": "/assets/images/team/tech_3.png",
-    "label": "John Davis",
-    "role": "Chief Financial Officer"
+    "label": "Cool tech guy",
+    "role": "Writes code and stuff"
   },
   {
     "image": "/assets/images/team/tech_4.png",
-    "label": "Rachel Adams",
-    "role": "Chief Marketing Officer"
+    "label": "Wade Wilson",
+    "role": "Obviously Deadpool"
   }
 ]
