@@ -9,6 +9,7 @@ interface TeamsCardProps {
   role: string;
 }
 
+// Button categories
 const teamCategories = [
   { id: "management", label: "Management Team" },
   { id: "nutritionist", label: "Nutritionists and Dietitians" },
@@ -17,12 +18,15 @@ const teamCategories = [
   { id: "tech", label: "Technology and Development" },
 ];
 
+// Category buttons to filter team members by their roles
 const TeamsCard = () => {
   const [isManagement, setIsManagement] = useState(true);
   const [isNutritionist, setIsNutritionist] = useState(false);
   const [isSupport, setIsSupport] = useState(false);
   const [isMarketing, setIsMarketing] = useState(false);
   const [isTech, setIsTech] = useState(false);
+  
+  // Handle category button click
   function handleCategoryClick(categoryId: string) {
     setIsManagement(categoryId === "management");
     setIsNutritionist(categoryId === "nutritionist");
@@ -55,14 +59,21 @@ const TeamsCard = () => {
           </ul>
         ))}
       </motion.section>
+      {/* -- All Teams Container -- */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.2, ease: "easeInOut", delay: 2 }}
+      >
       {/* -- Management Team -- */}
       <AnimatePresence>
         {isManagement && (
           <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 0 }}
-            transition={{ duration: 0.5, ease: "linear" }}
+            initial={{ x:2000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1}}
+            exit={{ x:-2000, opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
             className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {managementTeam.map((item: TeamsCardProps, index: number) => (
@@ -92,10 +103,10 @@ const TeamsCard = () => {
       <AnimatePresence>
         {isNutritionist && (
           <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 0 }}
-            transition={{ duration: 0.5, ease: "linear" }}
+            initial={{ x:2000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1}}
+            exit={{ x:-2000, opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
             className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {nutritionTeam.map((item: TeamsCardProps, index: number) => (
@@ -125,10 +136,10 @@ const TeamsCard = () => {
       <AnimatePresence>
         {isSupport && (
           <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 0 }}
-            transition={{ duration: 0.5, ease: "linear" }}
+            initial={{ x:2000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1}}
+            exit={{ x:0, opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
             className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {supportTeam.map((item: TeamsCardProps, index: number) => (
@@ -158,10 +169,10 @@ const TeamsCard = () => {
       <AnimatePresence>
         {isMarketing && (
           <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 0 }}
-            transition={{ duration: 0.5, ease: "linear" }}
+            initial={{ x:2000, opacity: 0 }}
+            animate={{ x: 0, opacity: 1}}
+            exit={{ x:0, opacity: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
             className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {marketingTeam.map((item: TeamsCardProps, index: number) => (
@@ -191,10 +202,10 @@ const TeamsCard = () => {
       <AnimatePresence>
               {isTech && (
                 <motion.section
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 0 }}
-                  transition={{ duration: 0.5, ease: "linear" }}
+                  initial={{ x:2000, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1}}
+                  exit={{ x:0, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
                   className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
                 >
                   {techTeam.map((item: TeamsCardProps, index: number) => (
@@ -220,6 +231,7 @@ const TeamsCard = () => {
                 </motion.section>
               )}
             </AnimatePresence>
+      </motion.div>
       {/* -- Achievements CTA -- */}
       <motion.section
         initial={{ opacity: 0 }}

@@ -30,69 +30,69 @@ export const managementTeam = [
 export const nutritionTeam = [
   {
     "image": "/assets/images/team/nutri_1.png",
-    "label": "Sarah Mitchell",
-    "role": "Founder and CEO"
+    "label": "Sarah Johnson",
+    "role": "Head Nutritionist"
   },
   {
     "image": "/assets/images/team/nutri_2.png",
-    "label": "Emily Thompson",
-    "role": "Chief Operating Officer"
+    "label": "Judy Abbott",
+    "role": "Dietitian"
   },
   {
     "image": "/assets/images/team/nutri_3.png",
-    "label": "John Davis",
-    "role": "Chief Financial Officer"
+    "label": "Barbara Brown",
+    "role": "Wellness Coach"
   },
   {
     "image": "/assets/images/team/nutri_4.png",
-    "label": "Rachel Adams",
-    "role": "Chief Marketing Officer"
+    "label": "Evelyn Clark",
+    "role": "Sports Nutritionist"
   }
 ]
 
 export const supportTeam = [
   {
     "image": "/assets/images/team/sav_1.png",
-    "label": "Sarah Mitchell",
-    "role": "Founder and CEO"
+    "label": "Joe Amalgamo",
+    "role": "Nerd"
   },
   {
     "image": "/assets/images/team/sav_2.png",
-    "label": "Emily Thompson",
-    "role": "Chief Operating Officer"
+    "label": "Benoit Blanc",
+    "role": "Coffee Enthusiast"
   },
   {
     "image": "/assets/images/team/sav_3.png",
-    "label": "John Davis",
-    "role": "Chief Financial Officer"
+    "label": "John Di Marco",
+    "role": "Support Team Lead"
   },
   {
     "image": "/assets/images/team/sav_4.png",
-    "label": "Rachel Adams",
-    "role": "Chief Marketing Officer"
+    "label": "Lucy Gains",
+    "role": "Customer Success Manager"
   }
 ]
 
 export const marketingTeam = [
   {
     "image": "/assets/images/team/market_1.png",
-    "label": "Sarah Mitchell",
-    "role": "Founder and CEO"
+    "label": "Julia Roberts",
+    "role": "Social Media Manager"
   },
   {
     "image": "/assets/images/team/market_2.png",
-    "label": "Emily Thompson",
-    "role": "Chief Operating Officer"
+    "label": "Mark Bradford",
+    "role": "Content Strategist"
   },
   {
     "image": "/assets/images/team/market_3.png",
-    "label": "John Davis",
-    "role": "Chief Financial Officer"
+    "label": "Marcus Dibolo",
+    "role": "Chief Marketing Officer"
   },
   {
     "image": "/assets/images/team/market_4.png",
-    "label": "Rachel Adams",
-    "role": "Chief Marketing Officer"
+    "label": "Nicole Kidwoman",
+    "role": "Brand Manager"
   }
 ]
 
