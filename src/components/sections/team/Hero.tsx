@@ -14,7 +14,7 @@ const Hero = () => {
  
   
   return (
-    <main className="w-screen scroll-smooth pt-10 md:pt-20 lg:px-24">
+    <main className="max-w-screen scroll-smooth pt-10 md:pt-20 mx-4 lg:mx-0 lg:px-24">
       <div className="relative bg-accent-var rounded-lg p-14">
           {/* -- Hero Icon/Image -- */}
         <motion.div 
@@ -30,7 +30,7 @@ const Hero = () => {
         </motion.h1>
         <motion.p 
           initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration: 1.2, ease: "easeInOut", delay: 1}}
-          className="text-center py-14 px-4 ">
+          className="text-center py-14 ">
           Our team at Nutritionist is composed of highly skilled professionals
           who are passionate about helping you achieve your health and wellness
           goals. With a diverse range of 

@@ -43,16 +43,14 @@ const TeamsCard = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 1.2, ease: "easeInOut", delay: 1.4 }}
-        className="bg-primary flex gap-3 justify-center items-center rounded-b-lg h-24 mb-14 mx-24"
-      >
+        className="bg-primary grid md:grid-cols-2 lg:flex gap-3 justify-center items-center text-center rounded-b-lg p-8 lg:h-24 mb-14 mx-4 lg:mx-24">
         {teamCategories.map((category) => (
           <ul>
             <li>
               <Button
                 onClick={() => handleCategoryClick(category.id)}
                 variant="yearly"
-                className=" text-white transition duration-500 hover:bg-navbar hover:text-accent"
-              >
+                className=" text-white transition duration-500 hover:bg-navbar hover:text-accent">
                 {category.label}
               </Button>
             </li>
@@ -74,7 +72,7 @@ const TeamsCard = () => {
             animate={{ x: 0, opacity: 1}}
             exit={{ x:-2000, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
-            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+            className="grid lg:flex gap-6 mb-24 pb-14 px-4 md:px-24"
           >
             {managementTeam.map((item: TeamsCardProps, index: number) => (
               <div
@@ -82,7 +80,7 @@ const TeamsCard = () => {
                 className="relative group"
               >
                 <img
-                  className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
+                  className="z-10 w-fit transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
                   src={item.image}
                   alt="team member portrait"
                 />
