@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import WorkflowCard from "@/components/ui/process/workflowCard";
+import WorkflowCard from "@/components/ui/process/WorkflowCard";
 
 // interface WorkflowProps {
 //   propName: type;
