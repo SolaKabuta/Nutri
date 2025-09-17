@@ -72,7 +72,7 @@ const TeamsCard = () => {
             animate={{ x: 0, opacity: 1}}
             exit={{ x:-2000, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
-            className="grid lg:flex gap-6 mb-24 pb-14 px-4 md:px-24"
+            className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {managementTeam.map((item: TeamsCardProps, index: number) => (
               <div
@@ -105,7 +105,7 @@ const TeamsCard = () => {
             animate={{ x: 0, opacity: 1}}
             exit={{ x:-2000, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
-            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+            className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {nutritionTeam.map((item: TeamsCardProps, index: number) => (
               <div
@@ -138,7 +138,7 @@ const TeamsCard = () => {
             animate={{ x: 0, opacity: 1}}
             exit={{ x:0, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
-            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+            className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {supportTeam.map((item: TeamsCardProps, index: number) => (
               <div
@@ -171,7 +171,7 @@ const TeamsCard = () => {
             animate={{ x: 0, opacity: 1}}
             exit={{ x:0, opacity: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
-            className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+            className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
             {marketingTeam.map((item: TeamsCardProps, index: number) => (
               <div
@@ -204,7 +204,7 @@ const TeamsCard = () => {
                   animate={{ x: 0, opacity: 1}}
                   exit={{ x:0, opacity: 0 }}
                   transition={{ duration: 0.5, ease: "easeInOut", delay: 0.5 }}
-                  className="grid md:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+                  className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
                 >
                   {techTeam.map((item: TeamsCardProps, index: number) => (
                     <div

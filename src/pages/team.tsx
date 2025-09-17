@@ -1,15 +1,15 @@
 import PageTransition from "@/components/animations/PageTransition";
-import OurTeam from '@/components/sections/team/OurTeam';
+import TeamsCard from '@/components/ui/team/TeamsCard';
 
 import Hero from '@/components/sections/team/Hero';
 const Team = () => {
   return (
     <>
       <PageTransition>
-      <main>
+      {/*<main>*/}
       <Hero/>
-      <OurTeam/>
-      </main>
+      <TeamsCard/>
+      {/*</main>*/}
       </PageTransition>
     </>
   );
