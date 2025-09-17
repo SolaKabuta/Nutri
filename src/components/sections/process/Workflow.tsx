@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import WorkflowCard from "@/components/ui/process/workflowCard";
 
 // interface WorkflowProps {
 //   propName: type;
@@ -30,6 +31,7 @@ const Workflow = () => {
           the resources you need to achieve your goals. Here's how it works
         </motion.p>
       </div>
+      <WorkflowCard />
     </main>
   );
 };

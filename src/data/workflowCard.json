@@ -1,0 +1,92 @@
+ [
+  {
+  "number": "O1",
+  "label": "Initial Consultation",
+  "icon": "/assets/icons/process/flags.svg",
+  "text": [
+    "We start by scheduling an initial consultation, either in person or through a convenient ", 
+    "online meeting. During this session, we will discuss your health history, lifestyle, goals, ", 
+    "and any specific dietary requirements."]
+  },
+  {
+  "number": "O2",
+  "label": "Personalized Nutritrion Plans",
+  "icon": "/assets/icons/process/basket.svg",
+  "text": [
+    "Our team of experienced and certified nutritionists will provide professional guidance", 
+    "and support throughout your journey. They will answer your questions, address your ", 
+    "concerns, and keep you motivated as you work towards your goals."]
+  },
+  {
+  "number": "O3",
+  "label": "Food Tracking and Analysis",
+  "icon": "/assets/icons/process/clipboard.svg",
+  "text": [
+    "Effortlessly track your food intake using our user-friendly app. Our nutritionists will ", 
+    "analyze your data to provide insights into your eating habits, help you identify areas", 
+    "for improvement, and make personalized recommendations."]
+  },
+  {
+  "number": "O4",
+  "label": "Meal Planning and Recipes",
+  "icon": "/assets/icons/process/cutlery.svg",
+  "text": [
+    "Access a vast collection of delicious and healthy recipes tailored to your dietary needs", 
+    "Our nutritionists will also create personalized meal plans, making it easier for you to ", 
+    "stay on track and enjoy nutritious meals."]
+  },
+  {
+  "number": "O5",
+  "label": "Lifestyle and Behavior Coaching",
+  "icon": "/assets/icons/process/headset.svg",
+  "text": [
+    "Achieving sustainable results requires more than just a diet plan. Our nutritionists will ", 
+    "work with you to develop healthy habits, address emotional eating, and provide ", 
+    "strategies to overcome obstacles along the way."]
+  },
+  {
+  "number": "O6",
+  "label": "Nutritional Education and Workshops",
+  "icon": "/assets/icons/process/shield.svg",
+  "text": [
+    "Expand your knowledge of nutrition through informative articles and educational ", 
+    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
+    "informed choices for long-term success."]
+  },
+  {
+  "number": "O7",
+  "label": "Nutritional Education and Workshops",
+  "icon": "/assets/icons/process/pin.svg",
+  "text": [
+    "Expand your knowledge of nutrition through informative articles and educational ", 
+    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
+    "informed choices for long-term success."]
+  },
+  {
+  "number": "O8",
+  "label": "Nutritional Education and Workshops",
+  "icon": "/assets/icons/process/hat.svg",
+  "text": [
+    "Expand your knowledge of nutrition through informative articles and educational ", 
+    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
+    "informed choices for long-term success."]
+  },
+  {
+  "number": "O9",
+  "label": "Nutritional Education and Workshops",
+  "icon": "/assets/icons/process/battery.svg",
+  "text": [
+    "Expand your knowledge of nutrition through informative articles and educational ", 
+    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
+    "informed choices for long-term success."]
+  },
+  {
+  "number": "10",
+  "label": "Nutritional Education and Workshops",
+  "icon": "/assets/icons/process/cup.svg",
+  "text": [
+    "Expand your knowledge of nutrition through informative articles and educational ", 
+    "workshops. Our nutritionists will equip you with the knowledge and tools to make ", 
+    "informed choices for long-term success."]
+  }
+]
