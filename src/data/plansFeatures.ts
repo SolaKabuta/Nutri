@@ -1,6 +1,5 @@
 export const plansFeatures = [
   {
-    label: "Features",
     feature1: "Personalized Nutrition Plan",
     feature2: "Mobile App Access",
     feature3: "Email Support",

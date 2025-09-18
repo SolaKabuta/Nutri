@@ -73,7 +73,7 @@ const PlansCard = () => {
               </span>
             </p>
             {/* -- Features -- */}
-            <section className="text-balance font-medium bg-border-light rounded-lg [&_p]:p-4 [&_p]:border-b-2 transition duration-1000 ease-in-out group-hover:bg-accent group-hover:[&_p]:border-b-primary hover:scale-105 hover:translate-y-2">
+            <section className="text-balance font-medium bg-border-light rounded-lg [&_p]:p-4 [&_p]:border-b-2 transition duration-1000 ease-in-out  group-hover:[&_p]:border-b-primary hover:scale-105 hover:translate-y-2">
             <p>
               <span className="">
                 {item.feature1}

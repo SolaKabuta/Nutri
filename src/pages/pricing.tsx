@@ -13,7 +13,7 @@ const Pricing = () => {
     <>
      <Hero/> 
      <PlansCard/>
-      <PlansFeatures/>
+     <PlansFeatures/>
     </>
   );
 };
