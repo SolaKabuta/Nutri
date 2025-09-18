@@ -17,16 +17,16 @@ export const plansFeatures = [
 export const basicPlan = [
   {
     label: "Basic Plan",
-    feature1: "Access to all recipes",
-    feature2: "Personalized meal plans",
-    feature3: "",
-    feature4: "",
-    feature5: "",
-    feature6: "",
-    feature7: "",
-    feature8: "",
-    feature9: "",
-    feature10: "",
+    feature1: "/assets/icons/pricing/check.svg",
+    feature2: "/assets/icons/pricing/check.svg",
+    feature3: "/assets/icons/pricing/check.svg",
+    feature4: "/assets/icons/pricing/cross.svg",
+    feature5: "/assets/icons/pricing/cross.svg",
+    feature6: "/assets/icons/pricing/cross.svg",
+    feature7: "/assets/icons/pricing/cross.svg",
+    feature8: "/assets/icons/pricing/cross.svg",
+    feature9: "/assets/icons/pricing/cross.svg",
+    feature10: "/assets/icons/pricing/cross.svg",
   },
 ];
 
