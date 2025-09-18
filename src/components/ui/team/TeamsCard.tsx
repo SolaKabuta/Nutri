@@ -50,7 +50,7 @@ const TeamsCard = () => {
               <Button
                 onClick={() => handleCategoryClick(category.id)}
                 variant="yearly"
-                className=" text-white transition duration-500 hover:bg-navbar hover:text-accent">
+                className=" active:bg-accent text-white transition duration-500 hover:bg-navbar hover:text-accent">
                 {category.label}
               </Button>
             </li>

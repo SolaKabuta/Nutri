@@ -1,6 +1,7 @@
 import Hero from "@/components/sections/process/Hero";
 import Workflow from "@/components/sections/process/Workflow";
 
+
 // interface Process {
 //   propName: string;
 // }
