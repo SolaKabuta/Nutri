@@ -6,7 +6,9 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <main className="max-w-screen scroll-smooth pt-10 md:pt-20 mx-4 lg:mx-0 lg:px-24">
-      <div className="relative bg-accent-var rounded-lg p-14">
+      <motion.div 
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
+        className="relative bg-accent-var rounded-lg p-14">
         {/* -- Hero Icon/Image -- */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -49,7 +51,7 @@ const Hero = () => {
           knowledge, and tools you need to succeed. Here's a detailed breakdown
           of our process:
         </motion.p>
-      </div>
+      </motion.div>
     </main>
   );
 };
