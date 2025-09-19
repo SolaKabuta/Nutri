@@ -14,6 +14,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { motion } from "motion/react";
+import { Button } from "@/components/ui/button";
 
 // interface Features {
 //   propName: type;
@@ -130,11 +131,12 @@ const PlansFeatures = () => { const items = [
           </motion.p>
         </div>
       </section>
-      <section className="mx-24 mb-20">
+      {/* -- FAQ ACCORDION -- */}
+      <section className="grid grid-cols-3 gap-6 mx-24 mb-20">
         <Accordion
               type="single"
               collapsible
-              className="bg-accent-var rounded-lg w-full p-8"
+              className="col-span-2 bg-accent-var rounded-lg w-full p-8"
               defaultValue="item-1"
             >
               <AccordionItem value="item-1">
@@ -182,6 +184,14 @@ const PlansFeatures = () => { const items = [
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+            <div className="bg-accent-var rounded-lg p-8 h-92 text-center">
+              <div className="flex justify-center">
+              <img src="assets/images/pricing/cta.png" alt="cta icon" width={75} height={75}/>
+              </div>
+              <h2 className="text-2xl font-semibold pt-6">Ask a question</h2>
+              <p className="py-8 text-sm">Feel free to ask questions at anytime</p>
+              <Button aria-description="ask a question button">Ask a Question</Button>
+            </div>
       </section>
     </main>
   );
