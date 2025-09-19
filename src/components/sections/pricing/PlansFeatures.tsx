@@ -7,6 +7,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import { motion } from "motion/react";
 
 // interface Features {
@@ -123,6 +129,59 @@ const PlansFeatures = () => { const items = [
             way through your nutrition and wellness journey.
           </motion.p>
         </div>
+      </section>
+      <section className="mx-24 mb-20">
+        <Accordion
+              type="single"
+              collapsible
+              className="bg-accent-var rounded-lg w-full p-8"
+              defaultValue="item-1"
+            >
+              <AccordionItem value="item-1">
+                <AccordionTrigger>What is personalized nutrition coaching?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p>
+                    Personalized nutrition coaching involves creating a customized nutrition plan based on your unique goals, preferences, and dietary requirements. Our team of experts will work closely with you to develop a plan that fits your lifestyle and helps you achieve optimal health and wellness.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>How can nutrition coaching help me lose weight?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p>
+                    Nutrition coaching provides you with a tailored plan that matches your lifestyle and goals. Your coach will help you set realistic targets, track your progress, and adjust your nutrition plan as needed. You’ll learn how to make healthier choices, understand portion sizes, and develop habits that support sustainable weight loss.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>Can I still enjoy my favorite foods while on a nutrition plan?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p>
+                    Absolutely! Nutrition coaching is all about balance, not restriction. Your coach will help you include your favorite foods in moderation so you don’t feel deprived. The goal is to create a plan that fits your tastes and lifestyle, making it easier to stick with long-term.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>How often will I have contact with my nutritionist?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p>
+                    This depends on your preferences and the coaching package you choose. Typically, clients communicate with their nutritionist weekly through calls, messages, or check-ins. We’re flexible—let us know what works best for you!
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>How long will it take to see results?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p>Results vary from person to person and depend on your goals, commitment, and starting point. Most clients notice positive changes within a few weeks, but lasting results come from consistent habits over several months. Your coach will support you every step of the way.</p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>Are the meal plans and recipes provided suitable for vegetarians or vegans?</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-4 text-balance">
+                  <p>Yes! We offer meal plans and recipes tailored to various dietary preferences, including vegetarian and vegan options. Just let your coach know about your needs, and we’ll make sure your plan fits your lifestyle.</p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
       </section>
     </main>
   );
