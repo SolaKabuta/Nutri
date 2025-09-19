@@ -69,8 +69,8 @@ const PlansFeatures = () => { const items = [
   ];
 
   return (
-    <main>
-      <section className="bg-accent-var p-10 mb-16 mx-24">
+    <main className="">
+      <section className="bg-accent-var p-10 mb-16 lg:mx-24">
         {/* -- First Column -- */}
         {/*{tableHeaders.map((item, index) => (*/}
         {/*<div key={index} className="rounded-lg text-center md:text-left border-r pt-8 w-full">*/}
@@ -103,13 +103,13 @@ const PlansFeatures = () => { const items = [
             ))}
           </TableBody>
         </Table>
-        {/*</div>*/}
+        {/*</div>*/}≠
         {/*))}*/}
         
       </section>
       {/* -- FAQ -- */}
       <section>
-        <div className="">
+        <div className="grid place-items-center max-w-screen px-8 lg:mx-24">
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -132,11 +132,11 @@ const PlansFeatures = () => { const items = [
         </div>
       </section>
       {/* -- FAQ ACCORDION -- */}
-      <section className="grid grid-cols-3 gap-6 mx-24 mb-20">
+      <section className="grid lg:grid-cols-3 w-screen lg:w-fit gap-6  lg:mx-24 mb-20">
         <Accordion
               type="single"
               collapsible
-              className="col-span-2 bg-accent-var rounded-lg w-full p-8"
+              className="lg:col-span-2 bg-accent-var rounded-lg w-full p-8"
               defaultValue="item-1"
             >
               <AccordionItem value="item-1">

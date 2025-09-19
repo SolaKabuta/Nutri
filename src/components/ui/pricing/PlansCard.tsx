@@ -41,7 +41,7 @@ const PlansCard = () => {
   // }
 
   return (
-    <main className="pb-24 lg:mx-24">
+    <main className="grid place-content-center max-w-screen  pb-24 lg:mx-24">
       <motion.div 
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
