@@ -58,7 +58,7 @@ const Nabar = () => {
       <div className="absolute left-0 p-[0.5px] bg-navbar w-screen mt-1"></div>
       <section className="flex items-center justify-between py-4">
         {/* -- Logo -- */}
-        <Link to="/">
+        <Link to="/" onClick={() => setIsOpen(prev => !prev)}>
           <img
             className="transition duration-500 ease-in-out hover:scale-110"
             src="/assets/logo/logo.svg"
@@ -117,7 +117,7 @@ const Nabar = () => {
                 <ul
                   className="flex items-center justify-center w-full mb-2 bg-navbar size-8 py-8 rounded-lg transition ease-in-out accent-accent duration-300"
                   key={index}>
-                  <Link to={item.path}>{item.label}</Link>
+                  <Link to={item.path} onClick={() => setIsOpen(prev => !prev)}>{item.label}</Link>
                 </ul>
               ))}
             </div>
