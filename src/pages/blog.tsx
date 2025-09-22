@@ -1,11 +1,11 @@
 import Hero from "@/components/sections/blog/Hero";
 import BlogsCard from "@/components/ui/blog/BlogsCard";
 
-interface Blog {
-  propName: string;
-}
+// interface Blog {
+//   propName: string;
+// }
 
-const Blog: React.FC<Blog> = ({propName}) => {
+const Blog = () => {
   return (
     <div>
       <Hero/>
