@@ -132,11 +132,11 @@ const PlansFeatures = () => { const items = [
         </div>
       </section>
       {/* -- FAQ ACCORDION -- */}
-      <section className="grid lg:grid-cols-3 w-screen lg:w-fit gap-6  lg:mx-24 mb-20">
+      <section className="grid lg:grid-cols-3  w-screen lg:w-fit gap-6  lg:mx-24 mb-20">
         <Accordion
               type="single"
               collapsible
-              className="lg:col-span-2 bg-accent-var rounded-lg w-full p-8"
+              className="lg:col-start-1 lg:col-span-2 bg-accent-var rounded-lg w-full p-8"
               defaultValue="item-1"
             >
               <AccordionItem value="item-1">
@@ -184,7 +184,8 @@ const PlansFeatures = () => { const items = [
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-            <div className="bg-accent-var rounded-lg p-8 h-92 text-center">
+            {/* -- CTA -- */}
+            <div className="lg:col-start-3 bg-accent-var rounded-lg p-8 h-92 text-center">
               <div className="flex justify-center">
               <img src="assets/images/pricing/cta.png" alt="cta icon" width={75} height={75}/>
               </div>
