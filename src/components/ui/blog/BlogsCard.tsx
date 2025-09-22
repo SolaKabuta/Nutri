@@ -71,11 +71,11 @@ const BlogsCard = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -2000, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
-              className="grid md:grid-cols-2 gap-6 mb-24 pb-14 px-4 lg:px-24"
+              className=" grid md:grid-cols-2 rounded-lg mb-24  lg:mx-24"
             >
               {weightLossTips.map((item: Feature, index: number) => (
-                <div key={index} className="relative group">
-                  <p className="underline underline-offset-10 decoration-accent font-semibold pb-8">
+                <div key={index} className="relative group bg-accent-var border-1 p-14">
+                  <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
                     {item.label}
                   </p>
                   <img src={item.image} alt="" width={1000} height={800} />
@@ -110,7 +110,7 @@ const BlogsCard = () => {
                     <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
                       {item.label}
                     </p>
-                    <p className="text-sm transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
+                    <p className="transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
                       {item.text}
                     </p>
                   </div>

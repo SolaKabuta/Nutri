@@ -107,11 +107,11 @@ const Nabar = () => {
         <AnimatePresence>
       {isOpen && (
           <motion.section
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 500 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 50 }}
+            exit={{ opacity: 0, x: 500 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="md:hidden h-screen">
+            className="absolute z-50 top-38 right-0 w-screen min-h-screen bg-primary px-2 md:hidden">
             <div className="lg:flex gap-5 justify-center items-center">
               {menu.map((item, index) => (
                 <ul
