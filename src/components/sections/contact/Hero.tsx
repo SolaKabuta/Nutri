@@ -57,10 +57,10 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.2, ease: "easeInOut", delay: 1.4 }}
-              className="bg-primary grid md:grid-cols-3 lg:flex gap-8 justify-center items-center text-center rounded-b-lg p-8 lg:h-34 mb-14">
+              className="bg-primary grid md:grid-cols-3 lg:flex gap-4 lg:gap-8 justify-center items-center text-center rounded-b-lg p-8 lg:h-34 mb-14">
                     <Button
                       variant="yearly"
-                      className="bg-navbar grid place-items-center active:bg-accent text-white w-64 h-24 transition duration-500 hover:bg-navbar hover:text-accent">
+                      className="bg-navbar border-1 border-accent/20 grid place-items-center active:bg-accent text-white w-86 lg:w-64 h-30 lg:h-24 transition duration-500 hover:bg-navbar hover:text-accent">
                         {/* -- Mail Icon -- */}
                         <svg
                           className="size-8 fill-accent"
@@ -82,7 +82,7 @@ const Hero = () => {
                     </Button>
                     <Button
                       variant="yearly"
-                      className="bg-navbar grid place-items-center active:bg-accent text-white w-64 h-24 transition duration-500 hover:bg-navbar hover:text-accent">
+                      className="bg-navbar border-1 border-accent/20 grid place-items-center active:bg-accent text-white w-86 lg:w-64 h-30 lg:h-24 transition duration-500 hover:bg-navbar hover:text-accent">
                         {/* -- Phone Icon -- */}
                         <svg
                           className="size-8 fill-accent"
@@ -104,7 +104,7 @@ const Hero = () => {
                     </Button>
                     <Button
                       variant="yearly"
-                      className="bg-navbar grid place-items-center active:bg-accent text-white w-64 h-24 transition duration-500 hover:bg-navbar hover:text-accent">
+                      className="bg-navbar border-1 border-accent/20 grid place-items-center active:bg-accent text-white w-86 lg:w-64 h-30 lg:h-24 transition duration-500 hover:bg-navbar hover:text-accent">
                         {/* -- Pin Icon -- */}
                         <svg
                           className="size-8 "
