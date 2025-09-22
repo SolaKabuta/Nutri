@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+# Nutritionist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Nutritionist—a modern web platform designed to make nutrition advice accessible, engaging, and personal. This project is a showcase of my skills as a front-end developer and web designer, built with a focus on usability, clarity, and real-world impact.
 
-Currently, two official plugins are available:
+## What is Nutritionist?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Nutritionist is an interactive website for anyone interested in improving their health through better nutrition and wellness habits. The platform features a blog packed with practical articles, tips, and expert insights on topics like weight loss, healthy eating, fitness, motivation, and meal planning.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Blog Section:** Curated articles on nutrition, fitness, motivation, and recipes
+- **Personalized Demo:** Visitors can sign up for a free nutrition coaching demo
+- **User-Friendly Navigation:** Clean, intuitive layout for easy browsing
+- **Responsive Design:** Optimized for desktops, tablets, and phones
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Who is it for?
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **Recruiters:** Nutritionist demonstrates my ability to design and build user-centered web applications, with attention to detail and professional standards.
+- **Non-Developers:** If you’re curious about nutrition or want reliable advice, this site is built to be simple to use—no tech experience needed.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Why I Built This
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+As a developer and designer, I am passionate about creating tools that help people make informed decisions about their health. Nutritionist reflects my commitment to clear communication, thoughtful design, and practical solutions.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Frontend:** React.js, Next.js, Tailwind CSS
+- **Design:** Figma (for wireframes and UI)
+- **Deployment:** Vercel
+
+## Explore More
+
+Visit the blog, try the demo, or get in touch for collaboration opportunities. I’m always open to feedback and new ideas!
+
+---
+
+**Portfolio:** [solakabuta.com](https://solakabuta.com)  
+**LinkedIn:** [linkedin.com/in/sola-kabuta/](https://linkedin.com/in/sola-kabuta/)

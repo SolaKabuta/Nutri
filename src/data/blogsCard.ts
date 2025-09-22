@@ -36,13 +36,13 @@ export const healthyEating = [
     "image": "/assets/images/blogs/healthy_1.png",
     "label": "Healthy Eating",
     "title": "The Benefits of a Plant-Based Diet for Overall Health",
-    "text": "Head Nutritionist"
+    "text": "Explore the advantages of adopting a plant-based diet. Learn about the potential health benefits, nutrient-rich plant-based foods, and tips for transitioning to a plant-based lifestyle."
   },
   {
     "image": "/assets/images/blogs/healthy_2.png",
     "label": "Healthy Eating",
     "title": "Understanding Macronutrients: Carbohydrates, Proteins, and Fats",
-    "text": "Dietitian"
+    "text": "Get a comprehensive overview of macronutrients and their role in a balanced diet. Discover the best sources of each macronutrient and how to incorporate them into your meals."
   },
 ]
 

@@ -1,14 +1,14 @@
 ## 🚧 Nutritionist Project TODOs
 
 **UI & Animations**
-- [ ] Fine tune teams animations
-- [ ] Finish mobile navbar style
+- [ 🚧 ] Fine tune teams and blog posts animations
+- [ 🚧 ] Finish mobile navbar style
 - [ ] Show active navbar link
-- [ ] Show active team tab button
+- [ ] Show active team and blog posts tab button
 
 **Pages**
-- [ ] Add Pricing page
-- [ ] Add Blog page
+- [ ☑ ] Add Pricing page
+- [ 🚧 ] Add Blog page
 - [ ] Add Contact page
 
 **Contact Page**

@@ -11,7 +11,7 @@ interface Feature {
 }
 
 // Button categories
-const teamCategories = [
+const blogPosts = [
   { id: "all", label: "All" },
   { id: "weight", label: "Weight Loss Tips" },
   { id: "healthy", label: "Healthy Eating" },
@@ -23,12 +23,15 @@ const teamCategories = [
 // Category buttons to filter team members by their roles
 const BlogsCard = () => {
   const [isAll, setIsAll] = useState(true);
-  const [isNutritionist, setIsNutritionist] = useState(false);
+  const [isWeight, setIsWeight] = useState(false);
+  const [isHealthy, setIsHealthy] = useState(false);
 
   // Handle category button click
   function handleCategoryClick(categoryId: string) {
     setIsAll(categoryId === "all");
-    setIsNutritionist(categoryId === "nutritionist");
+    setIsWeight(categoryId === "weight");
+    // setIsNutritionist(categoryId === "nutritionist");
+    setIsHealthy(categoryId === "healthy");
   }
 
   return (
@@ -41,7 +44,7 @@ const BlogsCard = () => {
         transition={{ duration: 1.2, ease: "easeInOut", delay: 1.4 }}
         className="bg-primary grid md:grid-cols-2 lg:flex gap-3 justify-center items-center text-center rounded-b-lg p-8 lg:h-24 mb-14 mx-4 lg:mx-24"
       >
-        {teamCategories.map((category) => (
+        {blogPosts.map((category) => (
           <ul>
             <li>
               <Button
@@ -71,56 +74,80 @@ const BlogsCard = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -2000, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
-              className=" grid md:grid-cols-2 rounded-lg mb-24  lg:mx-24"
+              className=" grid md:grid-cols-2 rounded-xl mb-24  lg:mx-24"
             >
               {weightLossTips.map((item: Feature, index: number) => (
-                <div key={index} className="relative group bg-accent-var border-1 p-14">
+                <div key={index} className="relative group bg-accent-var border-1 p-8">
                   <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
                     {item.label}
                   </p>
                   <img src={item.image} alt="" width={1000} height={800} />
                   <p className="py-8 font-semibold">{item.title}</p>
-                  <div className="flex items-center">
-                    <p>{item.text}</p>
-                    <Button>Read More</Button>
+                  {/* -- Text + CTA layout -- */}
+                  <div className="grid grid-cols-3 items-center">
+                    <p className="col-span-2">{item.text}</p>
+                    <Button className="col-start-3">Read More</Button>
                   </div>
                 </div>
               ))}
             </motion.section>
+            
           )}
         </AnimatePresence>
-        {/* -- Nutrition Team -- */}
+        {/* -- Weight Loss Tips -- */}
         <AnimatePresence>
-          {isNutritionist && (
+          {isWeight && (
             <motion.section
               initial={{ x: 2000, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -2000, opacity: 0 }}
-              transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
-              className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
+              className=" grid md:grid-cols-2 rounded-xl mb-24  lg:mx-24"
             >
-              {healthyEating.map((item: Feature, index: number) => (
-                <div key={index} className="relative group">
-                  <img
-                    className="z-10 transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
-                    src={item.image}
-                    alt="team member portrait"
-                  />
-                  <div className="absolute z-30 -bottom-4 bg-accent-var rounded-lg w-64 py-8 px-10 transition duration-700 group-hover:translate-y-2 group-hover:translate-x-8">
-                    <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
-                      {item.label}
-                    </p>
-                    <p className="transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
-                      {item.text}
-                    </p>
+              {weightLossTips.map((item: Feature, index: number) => (
+                <div key={index} className="relative group bg-accent-var border-1 p-8">
+                  <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
+                    {item.label}
+                  </p>
+                  <img src={item.image} alt="" width={1000} height={800} />
+                  <p className="py-8 font-semibold">{item.title}</p>
+                  {/* -- Text + CTA layout -- */}
+                  <div className="grid grid-cols-3 items-center">
+                    <p className="col-span-2">{item.text}</p>
+                    <Button className="col-start-3">Read More</Button>
                   </div>
                 </div>
               ))}
             </motion.section>
           )}
         </AnimatePresence>
-        {/* -- Support Team -- */}
-
+        {/* -- Healthy Eating -- */}
+        <AnimatePresence>
+          {isHealthy && (
+            <motion.section
+              initial={{ x: 2000, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -2000, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
+              className=" grid md:grid-cols-2 rounded-xl mb-24  lg:mx-24"
+            >
+              {healthyEating.map((item: Feature, index: number) => (
+                <div key={index} className="relative group bg-accent-var border-1 p-8">
+                  <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
+                    {item.label}
+                  </p>
+                  <img src={item.image} alt="" width={1000} height={800} />
+                  <p className="py-8 font-semibold">{item.title}</p>
+                  {/* -- Text + CTA layout -- */}
+                  <div className="grid grid-cols-3 items-center">
+                    <p className="col-span-2">{item.text}</p>
+                    <Button className="col-start-3">Read More</Button>
+                  </div>
+                </div>
+              ))}
+            </motion.section>
+          )}
+        </AnimatePresence>
         {/* -- Marketing Team -- */}
 
         {/* -- Tech Team -- */}
