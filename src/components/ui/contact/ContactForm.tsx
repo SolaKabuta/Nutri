@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner"
-import { Toaster } from "@/components/ui/sonner"
-import {useState} from 'react';
+// import { toast } from "sonner"
+// import { Toaster } from "@/components/ui/sonner"
+// import {useState} from 'react';
 
 
 
@@ -13,7 +13,7 @@ import {useState} from 'react';
 
 const ContactForm = () => {
  
- const [isToast, setIsToast] = useState ("It worked"); 
+ // const [isToast, setIsToast] = useState ("It worked"); 
   
   return (
     <div>
@@ -52,10 +52,10 @@ const ContactForm = () => {
               />
               <p className="text-sm float-right">Max 250 chars</p>
             </fieldset>
-            <Button id="sendIt" onClick={() => setIsToast()} className="w-full" type="submit">
+            <Button id="sendIt"className="w-full" type="submit">
               Send Message
             </Button>
-            {isToast && <Toaster position="top-right" richColors closeButton />}
+            {/*{isToast && <Toaster position="top-right" richColors closeButton />}*/}
           </div>
           <div className="col-start-2">
             <img src="/assets/images/map.png" alt="" />
