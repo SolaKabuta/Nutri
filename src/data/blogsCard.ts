@@ -46,83 +46,47 @@ export const healthyEating = [
   },
 ]
 
-export const supportTeam = [
+export const fitnessExercice = [
   {
-    "image": "/assets/images/team/sav_1.png",
-    "label": "Joe Amalgamo",
-    "title": "",
-    "text": "Nerd"
+    "image": "/assets/images/fitness/fitness_1.png",
+    "label": "Fitness and Exercise",
+    "title": "Cardio vs. Strength Training: Which Is Better for Weight Loss?",
+    "text": "Explore the benefits of both cardio and strength training exercises for weight loss. Find out how to combine them effectively to maximize your results."
   },
   {
-    "image": "/assets/images/team/sav_2.png",
-    "label": "Benoit Blanc",
-    "title": "",
-    "text": "Coffee Enthusiast"
+    "image": "/assets/images/fitness/fitness_2.png",
+    "label": "Fitness and Exercise",
+    "title": "Building a Home Workout Routine: Tips and Best Practices",
+    "text": "Discover how to create an effective workout routine at home. Learn about equipment options, exercise techniques, and ways to stay motivated."
   },
-  {
-    "image": "/assets/images/team/sav_3.png",
-    "label": "John Di Marco",
-    "title": "",
-    "text": "Support Team Lead"
-  },
-  {
-    "image": "/assets/images/team/sav_4.png",
-    "label": "Lucy Gains",
-    "title": "",
-    "text": "Customer Success Manager"
-  }
 ]
 
-export const marketingTeam = [
+export const mindsetMotivation = [
   {
-    "image": "/assets/images/team/market_1.png",
-    "label": "Julia Roberts",
-    "title": "",
-    "text": "Social Media Manager"
+    "image": "/assets/images/mindset/mindset_1.png",
+    "label": "Mindset and Motivation",
+    "title": "Developing a Positive Body Image and Self-Confidence",
+    "text": "Explore techniques for cultivating a positive body image and improving self-confidence. Learn how to embrace your body and appreciate your unique qualities."
   },
   {
-    "image": "/assets/images/team/market_2.png",
-    "label": "Mark Bradford",
-    "title": "",
-    "text": "Content Strategist"
+    "image": "/assets/images/mindset/mindset_2.png",
+    "label": "Mindset and Motivation",
+    "title": "Overcoming Self-Sabotage in Your Weight Loss Journey",
+    "text": "Identify self-sabotaging behaviors and learn strategies to overcome them. Discover how to shift your mindset and develop healthier habits."
   },
-  {
-    "image": "/assets/images/team/market_3.png",
-    "label": "Marcus Dibolo",
-    "title": "",
-    "text": "Chief Marketing Officer"
-  },
-  {
-    "image": "/assets/images/team/market_4.png",
-    "label": "Nicole Kidwoman",
-    "title": "",
-    "text": "Brand Manager"
-  }
 ]
 
-export const techTeam = [
+export const recipesPlanning = [
   {
-    "image": "/assets/images/team/tech_1.png",
-    "label": "Maxine Marshall",
-    "title": "",
-    "text": "Web Designer"
+    "image": "/assets/images/planning/planning_1.png",
+    "label": "Recipes and Meal Planning",
+    "title": "Healthy and Flavorful Lunch Ideas for a Busy Lifestyle",
+    "text": "Discover a variety of tasty and nutritious lunch options that are perfect for those with busy schedules. These recipes are quick to make and packed with essential nutrients."
   },
   {
-    "image": "/assets/images/team/tech_2.png",
-    "label": "Shawn Spencer",
-    "title": "",
-    "text": "Front-end Developer"
+    "image": "/assets/images/planning/planning_2.png",
+    "label": "Recipes and Meal Planning",
+    "title": "Satisfying and Nutritious Dinner Recipes for Weight Loss",
+    "text": "Find a collection of flavorful dinner recipes that are both satisfying and supportive of your weight loss goals. These recipes are designed to be healthy and delicious."
   },
-  {
-    "image": "/assets/images/team/tech_3.png",
-    "label": "Cool tech guy",
-    "title": "",
-    "text": "Writes code and stuff"
-  },
-  {
-    "image": "/assets/images/team/tech_4.png",
-    "label": "Wade Wilson",
-    "title": "",
-    "text": "Obviously Deadpool"
-  }
 ]

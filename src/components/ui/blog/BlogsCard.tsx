@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { weightLossTips, healthyEating } from "@/data/blogsCard";
+import { weightLossTips, healthyEating, fitnessExercice, mindsetMotivation, recipesPlanning } from "@/data/blogsCard";
 import { motion, AnimatePresence } from "motion/react";
 import { Button } from "@/components/ui/button";
 
@@ -25,6 +25,9 @@ const BlogsCard = () => {
   const [isAll, setIsAll] = useState(true);
   const [isWeight, setIsWeight] = useState(false);
   const [isHealthy, setIsHealthy] = useState(false);
+  const [isFitness, setIsFitness] = useState(false);
+  const [isMindset, setIsMindset] = useState(false);
+  const [isPlanning, setIsPlanning] = useState(false);
 
   // Handle category button click
   function handleCategoryClick(categoryId: string) {
@@ -32,6 +35,9 @@ const BlogsCard = () => {
     setIsWeight(categoryId === "weight");
     // setIsNutritionist(categoryId === "nutritionist");
     setIsHealthy(categoryId === "healthy");
+    setIsFitness(categoryId === "fitness");
+    setIsMindset(categoryId === "mindset");
+    setIsPlanning(categoryId === "planning");
   }
 
   return (
@@ -148,9 +154,87 @@ const BlogsCard = () => {
             </motion.section>
           )}
         </AnimatePresence>
-        {/* -- Marketing Team -- */}
-
-        {/* -- Tech Team -- */}
+        {/* -- Fitness and Exercice -- */}
+        <AnimatePresence>
+          {isFitness && (
+            <motion.section
+              initial={{ x: 2000, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -2000, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
+              className=" grid md:grid-cols-2 rounded-xl mb-24  lg:mx-24"
+            >
+              {fitnessExercice.map((item: Feature, index: number) => (
+                <div key={index} className="relative group bg-accent-var border-1 p-8">
+                  <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
+                    {item.label}
+                  </p>
+                  <img src={item.image} alt="" width={1000} height={800} />
+                  <p className="py-8 font-semibold">{item.title}</p>
+                  {/* -- Text + CTA layout -- */}
+                  <div className="grid grid-cols-3 items-center">
+                    <p className="col-span-2">{item.text}</p>
+                    <Button className="col-start-3">Read More</Button>
+                  </div>
+                </div>
+              ))}
+            </motion.section>
+          )}
+        </AnimatePresence>
+        {/* -- Mindset and Motivation -- */}
+        <AnimatePresence>
+          {isMindset && (
+            <motion.section
+              initial={{ x: 2000, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -2000, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
+              className=" grid md:grid-cols-2 rounded-xl mb-24  lg:mx-24"
+            >
+              {mindsetMotivation.map((item: Feature, index: number) => (
+                <div key={index} className="relative group bg-accent-var border-1 p-8">
+                  <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
+                    {item.label}
+                  </p>
+                  <img src={item.image} alt="" width={1000} height={800} />
+                  <p className="py-8 font-semibold">{item.title}</p>
+                  {/* -- Text + CTA layout -- */}
+                  <div className="grid grid-cols-3 items-center">
+                    <p className="col-span-2">{item.text}</p>
+                    <Button className="col-start-3">Read More</Button>
+                  </div>
+                </div>
+              ))}
+            </motion.section>
+          )}
+        </AnimatePresence>
+        {/* -- Recipes and Meal Planning -- */}
+        <AnimatePresence>
+          {isPlanning && (
+            <motion.section
+              initial={{ x: 2000, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -2000, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
+              className=" grid md:grid-cols-2 rounded-xl mb-24  lg:mx-24"
+            >
+              {recipesPlanning.map((item: Feature, index: number) => (
+                <div key={index} className="relative group bg-accent-var border-1 p-8">
+                  <p className=" text-lg underline underline-offset-10 decoration-accent font-semibold pb-8">
+                    {item.label}
+                  </p>
+                  <img src={item.image} alt="" width={1000} height={800} />
+                  <p className="py-8 font-semibold">{item.title}</p>
+                  {/* -- Text + CTA layout -- */}
+                  <div className="grid grid-cols-3 items-center">
+                    <p className="col-span-2">{item.text}</p>
+                    <Button className="col-start-3">Read More</Button>
+                  </div>
+                </div>
+              ))}
+            </motion.section>
+          )}
+        </AnimatePresence>
       </motion.div>
     </div>
   );
