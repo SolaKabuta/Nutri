@@ -1,5 +1,6 @@
 import {motion} from 'motion/react'
-import { Button } from '@/components/ui/button'
+
+// import { Button } from '@/components/ui/button'
 // interface ContactFormProps {
 //   propName: string;
 // }
@@ -7,7 +8,10 @@ import { Button } from '@/components/ui/button'
 const ContactForm = () => {
   return (
     <div>
-      
+      <motion.form>
+          <input name="query" />
+          <button type="submit">Search</button>
+      </motion.form>
     </div>
   );
 };
