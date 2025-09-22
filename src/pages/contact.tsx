@@ -1,5 +1,5 @@
 import Hero from "@/components/sections/contact/Hero";
-// import BlogsCard from "@/components/ui/blog/BlogsCard";
+import ContactForm from "@/components/ui/contact/ContactForm";
 
 // interface Blog {
 //   propName: string;
@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <Hero/>
-      {/*<BlogsCard/>*/}
+      <ContactForm/>
     </div>
   );
 };
