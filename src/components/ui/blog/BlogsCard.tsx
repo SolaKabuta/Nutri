@@ -71,7 +71,7 @@ const BlogsCard = () => {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -2000, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
-              className="grid grid-cols-2 gap-6 mb-24 pb-14 px-4 lg:px-24"
+              className="grid md:grid-cols-2 gap-6 mb-24 pb-14 px-4 lg:px-24"
             >
               {weightLossTips.map((item: Feature, index: number) => (
                 <div key={index} className="relative group">

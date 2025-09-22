@@ -89,11 +89,11 @@ const Nabar = () => {
         {/* -- Burger Menu -- */}
         <Button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="bg-none lg:hidden"
+          className="bg-primary lg:hidden"
         >
-          <svg width={24} height={24} viewBox="0 0 24 24">
+          <svg className="scale-125" width={44} height={44} viewBox="0 0 24 24">
             <path
-              className="fill-accent"
+              className=" stroke-accent stroke-2"
               d="M3 12H21M3 6H21M9 18H21"
               stroke="currentColor"
               strokeWidth={2}
@@ -104,8 +104,8 @@ const Nabar = () => {
         </Button>
       </section>
       {/* -- Sidebar -- */}
-      {isOpen && (
         <AnimatePresence>
+      {isOpen && (
           <motion.section
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -115,15 +115,15 @@ const Nabar = () => {
             <div className="lg:flex gap-5 justify-center items-center">
               {menu.map((item, index) => (
                 <ul
-                  className="w-full mb-1 border-1 size-8 rounded-lg"
+                  className="flex items-center justify-center w-full mb-2 bg-navbar size-8 py-8 rounded-lg transition ease-in-out accent-accent duration-300"
                   key={index}>
                   <Link to={item.path}>{item.label}</Link>
                 </ul>
               ))}
             </div>
           </motion.section>
-        </AnimatePresence>
       )}
+        </AnimatePresence>
     </nav>
   );
 };
