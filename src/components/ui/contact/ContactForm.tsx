@@ -1,5 +1,10 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner"
+import { Toaster } from "@/components/ui/sonner"
+import {useState} from 'react';
+
+
 
 // import { Button } from '@/components/ui/button'
 // interface ContactFormProps {
@@ -7,6 +12,9 @@ import { Button } from "@/components/ui/button";
 // }
 
 const ContactForm = () => {
+ 
+ const [isToast, setIsToast] = useState ("It worked"); 
+  
   return (
     <div>
       <motion.form
@@ -19,14 +27,14 @@ const ContactForm = () => {
               <fieldset className="pb-10">
                 <label className="w-full">Full Name</label>
                 <input
-                  name="query"
+                  name="name"
                   placeholder="Enter your Name"
                 />
               </fieldset>
               <fieldset>
                 <label>Email</label>
                 <input
-                  name="query"
+                  name="mail"
                   placeholder="Enter your Email"
                 />
               </fieldset>
@@ -39,14 +47,15 @@ const ContactForm = () => {
               <label>Message</label>
               <input
                 className="bg-input/80 rounded-lg p-6 h-32 w-full [&::placeholder]:align-top"
-                name="query"
+                name="message"
                 placeholder="Enter your Message"
               />
-              <p className="text-sm float-right">Max 200 chars</p>
+              <p className="text-sm float-right">Max 250 chars</p>
             </fieldset>
-            <Button className="w-full" type="submit">
+            <Button id="sendIt" onClick={() => setIsToast()} className="w-full" type="submit">
               Send Message
             </Button>
+            {isToast && <Toaster position="top-right" richColors closeButton />}
           </div>
           <div className="col-start-2">
             <img src="/assets/images/map.png" alt="" />
