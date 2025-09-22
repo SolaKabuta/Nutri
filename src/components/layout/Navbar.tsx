@@ -80,9 +80,9 @@ const Nabar = () => {
           {/* -- Contact CTA -- */}
           <ul>
             <li>
-              <Button className="transition duration-500 hover:bg-white hover:text-primary hover:scale-110 hover:cursor-pointer">
+              <Link to="/contact" className="bg-accent text-primary p-3 rounded transition duration-500 hover:bg-white hover:text-primary hover:scale-110 hover:cursor-pointer">
                 Contact Us
-              </Button>
+              </Link>
             </li>
           </ul>
         </div>
