@@ -91,6 +91,7 @@ p {
   --radius-xl: calc(var(--radius) + 4px);
   --color-background:  #FAFDF2;
   --color-navbar:  #234338;
+  --color-input:  #DCF1A7;
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -110,7 +111,6 @@ p {
   --color-destructive: var(--destructive);
   --color-border: #E5F5BD;
   --color-border-light: #EEF8D3;
-  --color-input: var(--input);
   --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
