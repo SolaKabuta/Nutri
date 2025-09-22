@@ -1,17 +1,18 @@
 import { useState } from "react";
-import { managementTeam, nutritionTeam, supportTeam, marketingTeam, techTeam } from "@/data/teamsCard";
+import { weightLossTips, healthyEating, supportTeam, marketingTeam, techTeam } from "@/data/blogsCard";
 import { motion, AnimatePresence } from "motion/react";
 import { Button } from "@/components/ui/button";
 
 interface TeamsCardProps {
   image: string;
   label: string;
-  role: string;
+  title: string;
+  text: string;
 }
 
 // Button categories
 const teamCategories = [
-  { id: "management", label: "Management Team" },
+  { id: "all", label: "All" },
   { id: "nutritionist", label: "Nutritionists and Dietitians" },
   { id: "support", label: "Customer Support" },
   { id: "marketing", label: "Marketing and Communications" },
@@ -20,7 +21,7 @@ const teamCategories = [
 
 // Category buttons to filter team members by their roles
 const BlogsCard = () => {
-  const [isManagement, setIsManagement] = useState(true);
+  const [isAll, setIsAll] = useState(true);
   const [isNutritionist, setIsNutritionist] = useState(false);
   const [isSupport, setIsSupport] = useState(false);
   const [isMarketing, setIsMarketing] = useState(false);
@@ -28,7 +29,7 @@ const BlogsCard = () => {
   
   // Handle category button click
   function handleCategoryClick(categoryId: string) {
-    setIsManagement(categoryId === "management");
+    setIsAll(categoryId === "all");
     setIsNutritionist(categoryId === "nutritionist");
     setIsSupport(categoryId === "support");
     setIsMarketing(categoryId === "marketing");
@@ -65,9 +66,9 @@ const BlogsCard = () => {
         transition={{ duration: 1.2, ease: "easeInOut", delay: 2 }}
       >
         {/*TODO: FINE TUNE ANIMATION*/}
-      {/* -- Management Team -- */}
+      {/* -- All Posts -- */}
       <AnimatePresence>
-        {isManagement && (
+        {isAll && (
           <motion.section
             initial={{ x:2000, opacity: 0 }}
             animate={{ x: 0, opacity: 1}}
@@ -75,24 +76,13 @@ const BlogsCard = () => {
             transition={{ duration: 0.5, ease: "easeInOut", delay: 0.7 }}
             className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
-            {managementTeam.map((item: TeamsCardProps, index: number) => (
+            {weightLossTips.map((item: TeamsCardProps, index: number) => (
               <div
                 key={index}
                 className="relative group"
               >
-                <img
-                  className="z-10 w-fit transition duration-700 ease-in-out group-hover:scale-110 group-hover:-translate-y-4"
-                  src={item.image}
-                  alt="team member portrait"
-                />
-                <div className="absolute z-30 -bottom-4 bg-accent-var rounded-lg w-64 py-8 px-10 transition duration-700 group-hover:translate-y-2 group-hover:translate-x-8">
-                  <p className="text-xl font-semibold transition duration-500 group-hover:scale-115">
-                    {item.label}
-                  </p>
-                  <p className="text-sm transition duration-1000 ease-in-out group-hover:scale-115 group-hover:translate-y-2">
-                    {item.role}
-                  </p>
-                </div>
+                <p className="underline underline-offset-10 decoration-accent font-semibold">{item.label}</p>
+                <img src={item.image} alt="" />
               </div>
             ))}
           </motion.section>
@@ -108,7 +98,7 @@ const BlogsCard = () => {
             transition={{ duration: 0.5, ease: "easeInOut", delay: 1.2 }}
             className="grid md:grid-cols-2 lg:flex gap-6 mb-24 pb-14 px-4 lg:px-24"
           >
-            {nutritionTeam.map((item: TeamsCardProps, index: number) => (
+            {healthyEating.map((item: TeamsCardProps, index: number) => (
               <div
                 key={index}
                 className="relative group"

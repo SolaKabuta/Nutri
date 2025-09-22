@@ -5,7 +5,7 @@ interface Blog {
   propName: string;
 }
 
-const Blog: React.FC<Blog> = () => {
+const Blog: React.FC<Blog> = ({propName}) => {
   return (
     <div>
       <Hero/>
