@@ -70,7 +70,7 @@ const PlansFeatures = () => { const items = [
 
   return (
     <main className="">
-      <section className="bg-accent-var p-10 mb-16 lg:mx-24">
+      <section className="hidden lg:block bg-accent-var p-10 mb-16 lg:mx-24">
         {/* -- First Column -- */}
         {/*{tableHeaders.map((item, index) => (*/}
         {/*<div key={index} className="rounded-lg text-center md:text-left border-r pt-8 w-full">*/}
