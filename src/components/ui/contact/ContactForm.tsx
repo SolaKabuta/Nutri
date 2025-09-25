@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
+import {useState} from 'react';
 // import { toast } from "sonner"
 // import { Toaster } from "@/components/ui/sonner"
-// import {useState} from 'react';
 
 
 
@@ -14,10 +14,31 @@ import { Button } from "@/components/ui/button";
 const ContactForm = () => {
  
  // const [isToast, setIsToast] = useState ("It worked"); 
+ const [email, setEmail] = useState (""); 
+ const [message, setMessage] = useState (""); 
+ const [error, setError] = useState (false); 
+ 
+ function handleSubmit (e: React.FormEvent) {
+    e.preventDefault();
+    
+    // if ( email != /\S+@\S+\.\S+/.test(email)) {
+    //   setError(true);
+    //   return;
+    // } else {
+    //   setError(false);
+    //   }
+    
+   console.log("Form submitted");
+   console.log(`${message}`);
+   setTimeout(() => {
+     location.reload();
+   }, 2000);
+ }
   
   return (
     <div>
       <motion.form
+        onSubmit={handleSubmit}
         className="bg-accent-var grid gap-8 p-10 lg:mx-24 my-16"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,7 +57,12 @@ const ContactForm = () => {
                 <input
                   name="mail"
                   placeholder="Enter your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
+                 {error && (
+                  <p className="!text-red-500 text-sm">Please enter a valid email address.</p>
+                   )}
               </fieldset>
             </section>
             <fieldset className="pb-4">
@@ -49,10 +75,12 @@ const ContactForm = () => {
                 className="bg-input/80 rounded-lg p-6 h-32 w-full [&::placeholder]:align-top"
                 name="message"
                 placeholder="Enter your Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
               <p className="text-sm float-right">Max 250 chars</p>
             </fieldset>
-            <Button id="sendIt"className="w-full" type="submit">
+            <Button className="w-full" type="submit">
               Send Message
             </Button>
             {/*{isToast && <Toaster position="top-right" richColors closeButton />}*/}
