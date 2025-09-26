@@ -1,8 +1,7 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import {useState} from 'react';
-// import { toast } from "sonner"
-// import { Toaster } from "@/components/ui/sonner"
+
 
 // interface ContactFormProps {
 //   propName: string;
@@ -11,9 +10,8 @@ import {useState} from 'react';
 const isValidEmail = (email: string) => /\S+@\S+\.\S+/.test(email);
 
 
-const ContactForm = () => {
+export default function ContactForm () {
  
- // const [isToast, setIsToast] = useState ("It worked"); 
  const [email, setEmail] = useState (""); 
  const [message, setMessage] = useState (""); 
  
@@ -85,7 +83,6 @@ const ContactForm = () => {
             <Button className="w-full" type="submit">
               Send Message
             </Button>
-            {/*{isToast && <Toaster position="top-right" richColors closeButton />}*/}
           </div>
           <div className="lg:col-start-2">
             <img src="/assets/images/map.png" alt="" />
@@ -94,5 +91,3 @@ const ContactForm = () => {
     </div>
   );
 };
-
-export default ContactForm;
