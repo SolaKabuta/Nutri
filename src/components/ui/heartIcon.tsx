@@ -1,19 +1,15 @@
-import * as React from 'react';
 import { useState } from "react";
 
-interface HeartIconProps {
-  propName: string;
-}
+// interface HeartIconProps {}
 
-const HeartIcon: React.FC<HeartIconProps> = () => {
+export default function HeartIcon() {
   
   const [isLiked, setIsLiked] = useState(false);
   
   return (
-    <div >
-      <button onClick={() => setIsLiked(prev => !prev)}>
+      <button onClick={() => setIsLiked(prev => !prev)}  aria-pressed={isLiked}>
         {/* -- Heart Icon -- */}
-        <svg className={isLiked ? "fill-red-500 " : "fill-none"} width={24} height={24} viewBox="0 0 24 24" fill="none">
+        <svg className={isLiked ? "fill-red-500 stroke-red-500" : "fill-none"} width={24} height={24} viewBox="0 0 24 24" fill="none">
           <path
             className={isLiked ? "stroke-red-500" : "stroke-1"}
             fillRule="evenodd"
@@ -26,8 +22,5 @@ const HeartIcon: React.FC<HeartIconProps> = () => {
           />
         </svg>
       </button> 
-    </div>
   );
 };
-
-export default HeartIcon;

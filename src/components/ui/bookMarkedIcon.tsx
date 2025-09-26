@@ -1,17 +1,13 @@
-import * as React from 'react';
 import { useState } from "react";
 
 
-interface BookMarkedIconProps {
-  propName: string;
-}
+// interface BookMarkedIconProps {}
 
-const BookMarkedIcon: React.FC<BookMarkedIconProps> = () => {
+export default function BookMarkedIcon ()  {
   
   const [isBookmarked, setIsBookmarked] = useState(false);
   
   return (
-    <div>
       <button onClick={() => setIsBookmarked(prev => !prev)}>
       {/* -- Fav Icon -- */}
       <svg className={isBookmarked ? " fill-black" : "fill-none"} width={24} height={24} viewBox="0 0 24 24" fill="none">
@@ -25,8 +21,5 @@ const BookMarkedIcon: React.FC<BookMarkedIconProps> = () => {
         />
       </svg>
       </button>
-    </div>
   );
 };
-
-export default BookMarkedIcon;

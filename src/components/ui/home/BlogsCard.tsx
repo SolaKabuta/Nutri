@@ -43,8 +43,8 @@ const BlogsCard = () => {
                   <p>{item.dateRead}</p>
                 </div>
                 <section className="flex gap-3 items-center [&_button]:bg-accent-var [&_button]:p-2 [&_button]:rounded-lg">
-                  <HeartIcon propName="" />
-                  <BookMarkedIcon propName="" />
+                  <HeartIcon />
+                  <BookMarkedIcon />
                 </section>
               </section>
             </div>

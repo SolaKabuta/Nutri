@@ -8,22 +8,27 @@ import {useState} from 'react';
 //   propName: string;
 // }
 
+const isValidEmail = (email: string) => /\S+@\S+\.\S+/.test(email);
+
+
 const ContactForm = () => {
  
  // const [isToast, setIsToast] = useState ("It worked"); 
  const [email, setEmail] = useState (""); 
  const [message, setMessage] = useState (""); 
+ 
+ 
  const [error, setError] = useState (false); 
  
  function handleSubmit (e: React.FormEvent) {
     e.preventDefault();
     
-    // if ( email != /\S+@\S+\.\S+/.test(email)) {
-    //   setError(true);
-    //   return;
-    // } else {
-    //   setError(false);
-    //   }
+    if ( isValidEmail(email)) {
+      setError(true);
+      return;
+    } else {
+      setError(false);
+      }
     
    console.log("Form submitted");
    console.log(`${message}`);
@@ -68,7 +73,7 @@ const ContactForm = () => {
             </fieldset>
             <fieldset className="pb-10">
               <label>Message</label>
-              <input
+              <textarea
                 className="bg-input/80 rounded-lg p-6 h-32 w-full [&::placeholder]:align-top"
                 name="message"
                 placeholder="Enter your Message"
@@ -82,7 +87,7 @@ const ContactForm = () => {
             </Button>
             {/*{isToast && <Toaster position="top-right" richColors closeButton />}*/}
           </div>
-          <div className="col-start-2">
+          <div className="lg:col-start-2">
             <img src="/assets/images/map.png" alt="" />
           </div>
       </motion.form>
