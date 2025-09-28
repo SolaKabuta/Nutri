@@ -38,7 +38,7 @@ const Footer = () => {
               className="transition duration-300 ease-in-out hover:text-accent hover:scale-110 hover:cursor-pointer"
               key={index}
             >
-              <li><Link to={item.path}>{item.label}</Link></li>
+              <li><a href={item.path}>{item.label}</a></li>
             </ul>
           ))}
         </div>
