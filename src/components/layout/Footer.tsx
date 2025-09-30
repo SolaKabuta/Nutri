@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // interface Nabar {
 //   propName: type;
 // }
@@ -36,7 +37,7 @@ const Footer = () => {
               className="transition duration-300 ease-in-out hover:text-accent hover:scale-110 hover:cursor-pointer"
               key={index}
             >
-              <li><a href={item.path}>{item.label}</a></li>
+              <li><Link to={item.path}>{item.label}</Link></li>
             </ul>
           ))}
         </div>
