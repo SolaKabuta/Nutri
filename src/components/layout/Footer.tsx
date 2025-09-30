@@ -1,5 +1,3 @@
-// import { useState } from "react";
-import { Link } from "react-router-dom";
 // interface Nabar {
 //   propName: type;
 // }
@@ -76,9 +74,9 @@ const Footer = () => {
       {/* -- FOOTER LOWER SECTION -- */}
       <section className=" grid gap-3 items-center place-items-center   lg:grid-cols-5  bg-navbar rounded-lg border border-price mb-2 p-2">
         {/* -- MAIL -- */}
-        <Link
+        <a
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
-          to="mailto:hello@squareup.com"
+          href="mailto:hello@squareup.com"
         >
           {/* -- Mail Icon -- */}
           <svg
@@ -98,11 +96,11 @@ const Footer = () => {
             />
           </svg>
           hello@squareup.com
-        </Link>
+        </a>
         {/* -- PHONE -- */}
-        <Link
+        <a
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
-          to="tel:+1234567890"
+          href="tel:+1234567890"
         >
           {/* -- Phone Icon -- */}
           <svg
@@ -122,11 +120,11 @@ const Footer = () => {
             />
           </svg>
           +91 91813 23 2309
-        </Link>
+        </a>
         {/* -- PIN -- */}
-        <Link
+        <a
           className="flex items-center gap-2 border-1 border-price p-2 rounded-md w-full"
-          to="https://www.google.com/maps/place/Bruxelles/@50.8552021,4.2930163,19786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c3a4ed73c76867:0xc18b3a66787302a7!8m2!3d50.8477029!4d4.3572001!16zL20vMDJybmJ2?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
+          href="https://www.google.com/maps/place/Bruxelles/@50.8552021,4.2930163,19786m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c3a4ed73c76867:0xc18b3a66787302a7!8m2!3d50.8477029!4d4.3572001!16zL20vMDJybmJ2?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"
           target='_blank'
         >
           {/* -- Pin Icon -- */}
@@ -155,11 +153,11 @@ const Footer = () => {
             />
           </svg>
           Somewhere in the World
-        </Link>
+        </a>
         {/* -- Copyrights -- */}
-          <Link className="text-sm font-light lg:col-start-5 w-full" to="/">
+          <a className="text-sm font-light lg:col-start-5 w-full" href="/">
             © 2023 Nutritionist. All rights reserved.
-          </Link>
+          </a>
       </section>
     </nav>
   );
